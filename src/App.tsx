@@ -1,13 +1,19 @@
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
 
 function App() {
   return (
-    <div className="layout-container">
-      <Header />
-      <Footer />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<h1>Bienvenue sur mon portfolio</h1>} />
+            <Route path="/about" element={<h1>À propos</h1>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 

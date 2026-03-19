@@ -3,7 +3,6 @@ export default function Header() {
     <>
       <section id="header">
         <div className="container">
-          <h1 className="logo">Vite</h1>
           <ul>
             <li>
               <a href="/guide/">Guide</a>
