@@ -1,40 +1,29 @@
-/* ========================================
-   LIQUID GLASS DIRECTIVE - Design System
-   Creative North Star: Luminous Depth
-   ======================================== */
-
-/* ========================================
-   CSS VARIABLES - COLOR PALETTE
-   ======================================== */
-
 :root {
-  /* Primary Colors */
-  --color-primary: #7fafff;
-  --color-tertiary: #68d3ff;
-  --color-on-primary: #002e60;
+  /* black */
+  --black-50: #f1f1f1;
+  --black-100: #dbdbdb;
+  --black-200: #bababa;
+  --black-300: #9d9d9d;
+  --black-400: #828282;
+  --black-500: #696969;
+  --black-600: #505050;
+  --black-700: #3c3c3c;
+  --black-800: #2a2a2a;
+  --black-900: #191919;
+  --black-950: #000000;
 
-  /* Surface Hierarchy */
-  --color-background: #0e0e10;
-  --color-surface-container-lowest: #0a0a0d;
-  --color-surface-container-low: #131315;
-  --color-surface: #2c2c2f;
-  --color-surface-bright: #2c2c2f;
-  --color-surface-container-high: #1f1f22;
-  --color-surface-container-highest: #252528;
-
-  /* Text Colors */
-  --color-on-surface: #fefbfe;
-  --color-on-surface-variant: #d0cdd3;
-  --color-outline-variant: #49454e;
-
-  /* Accent & Status */
-  --color-error: #f2b8b5;
-  --color-success: #a8d5ba;
-  --color-warning: #ffd699;
-
-  /* ========================================
-     CSS VARIABLES - TYPOGRAPHY
-     ======================================== */
+  /* blue */
+  --bleu-50: #ffffff;
+  --bleu-100: #eeeeff;
+  --bleu-200: #dddeff;
+  --bleu-300: #c9cdff;
+  --bleu-400: #b1baff;
+  --bleu-500: #92a4ff;
+  --bleu-600: #6089ff;
+  --bleu-700: #1d5cff;
+  --bleu-800: #0c3cc8;
+  --bleu-900: #021d7f;
+  --bleu-950: #010516;
 
   /* Font Families */
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -81,7 +70,6 @@ h6 {
   color: var(--color-on-surface);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h1 {

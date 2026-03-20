@@ -1,24 +1,34 @@
+import avatar from '../assets/avatar.jpeg'
+import './style/header.css'
+
 export default function Header() {
   return (
-    <>
-      <section id="header">
-        <div className="container">
-          <ul>
+    <section className="header-section">
+      <div className="header-container">
+        <p className="header-title">Nathan Jouannon</p>
+
+        <nav className="header-nav" aria-label="Navigation principale">
+          <ul className="header-nav-list">
             <li>
-              <a href="/guide/">Guide</a>
+              <a>Accueil</a>
             </li>
             <li>
-              <a href="/api/">API</a>
+              <a>Competences</a>
             </li>
             <li>
-              <a href="/plugins/">Plugins</a>
+              <a>Projets</a>
             </li>
             <li>
-              <a href="/resources/">Resources</a>
+              <a>Parcours</a>
+            </li>
+            <li>
+              <a>Contact</a>
             </li>
           </ul>
-        </div>
-      </section>
-    </>
+        </nav>
+
+        {avatar && <img className="header-avatar" src={avatar} alt="Avatar de Nathan Jouannon" />}
+      </div>
+    </section>
   )
 }
