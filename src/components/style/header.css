@@ -27,7 +27,7 @@
     ),
     linear-gradient(125deg, rgba(154, 185, 255, 0.26), rgba(255, 255, 255, 0.18));
   box-shadow:
-    0 24px 45px -30px rgba(19, 36, 93, 0.85),
+    0 15px 30px -30px rgba(19, 36, 93, 0.85),
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     inset 0 -1px 0 rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(18px) saturate(150%);
