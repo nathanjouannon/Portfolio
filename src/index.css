@@ -4,7 +4,7 @@
    ======================================== */
 
 /* ========================================
-   1. CSS VARIABLES - COLOR PALETTE
+   CSS VARIABLES - COLOR PALETTE
    ======================================== */
 
 :root {
@@ -33,112 +33,12 @@
   --color-warning: #ffd699;
 
   /* ========================================
-     2. CSS VARIABLES - SPACING SCALE
-     ======================================== */
-
-  --spacing-0: 0;
-  --spacing-1: 0.25rem;
-  --spacing-2: 0.5rem;
-  --spacing-3: 0.75rem;
-  --spacing-4: 1rem;
-  --spacing-6: 1.5rem;
-  --spacing-8: 2rem;
-  --spacing-10: 2.5rem;
-  --spacing-12: 3rem;
-  --spacing-16: 4rem;
-  --spacing-20: 5rem;
-
-  /* ========================================
-     3. CSS VARIABLES - BORDER RADIUS
-     ======================================== */
-
-  --radius-xs: 0.25rem;
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 2rem;
-  --radius-2xl: 3rem;
-  --radius-full: 9999px;
-
-  /* ========================================
-     4. CSS VARIABLES - SHADOWS
-     ======================================== */
-
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
-
-  /* Cloud Shadow (specific to Liquid Glass for modals) */
-  --shadow-cloud: 0 40px 80px rgba(10, 10, 13, 0.4);
-
-  /* ========================================
-     5. CSS VARIABLES - BACKDROP EFFECTS
-     ======================================== */
-
-  --backdrop-blur-sm: blur(4px);
-  --backdrop-blur-md: blur(12px);
-  --backdrop-blur-lg: blur(16px);
-  --backdrop-blur-xl: blur(24px);
-  --backdrop-blur-2xl: blur(40px);
-
-  /* ========================================
-     6. CSS VARIABLES - TRANSITIONS
-     ======================================== */
-
-  --transition-fast: 150ms ease-in-out;
-  --transition-base: 200ms ease-in-out;
-  --transition-slow: 300ms ease-in-out;
-
-  /* ========================================
-     7. CSS VARIABLES - TYPOGRAPHY
+     CSS VARIABLES - TYPOGRAPHY
      ======================================== */
 
   /* Font Families */
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-
-  /* Font Sizes */
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-
-  --font-size-headline-sm: 1.5rem;
-  --font-size-headline-md: 1.75rem;
-  --font-size-headline-lg: 2rem;
-  --font-size-display-sm: 2.5rem;
-  --font-size-display-md: 3rem;
-  --font-size-display-lg: 3.5rem;
-
-  /* Font Weight */
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-  /* Line Height */
-  --line-height-tight: 1.2;
-  --line-height-base: 1.5;
-  --line-height-relaxed: 1.75;
-
-  /* Letter Spacing */
-  --letter-spacing-tight: -0.02em;
-  --letter-spacing-normal: 0em;
-  --letter-spacing-wide: 0.05rem;
-
-  /* ========================================
-     8. CSS VARIABLES - Z-INDEX SCALE
-     ======================================== */
-
-  --z-dropdown: 1000;
-  --z-sticky: 1020;
-  --z-fixed: 1030;
-  --z-modal-backdrop: 1040;
-  --z-modal: 1050;
-  --z-popover: 1060;
-  --z-tooltip: 1070;
 }
 
 /* ========================================
@@ -165,10 +65,6 @@ body {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   overflow-x: hidden;
-}
-
-main {
-  min-height: 100vh;
 }
 
 /* ========================================
@@ -286,7 +182,6 @@ label {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: var(--backdrop-blur-xl);
   border: 1px solid var(--color-outline-variant);
-  border-opacity: 0.2;
   border-radius: var(--radius-xl);
 }
 
@@ -294,7 +189,6 @@ label {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: var(--backdrop-blur-md);
   border: 1px solid var(--color-outline-variant);
-  border-opacity: 0.15;
   border-radius: var(--radius-lg);
 }
 
