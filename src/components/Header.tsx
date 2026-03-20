@@ -1,4 +1,5 @@
 import avatar from '../assets/avatar.jpeg'
+import { Link } from 'react-router-dom'
 import './style/header.css'
 
 export default function Header() {
@@ -10,19 +11,19 @@ export default function Header() {
         <nav className="header-nav" aria-label="Navigation principale">
           <ul className="header-nav-list">
             <li>
-              <a>Accueil</a>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <a>Competences</a>
+              <Link to="/competences">Competences</Link>
             </li>
             <li>
-              <a>Projets</a>
+              <Link to="/projets">Projets</Link>
             </li>
             <li>
-              <a>Parcours</a>
+              <Link to="/parcours">Parcours</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
