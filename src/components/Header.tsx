@@ -20,7 +20,7 @@ export default function Header() {
               <Link to="/projets">Projets</Link>
             </li>
             <li>
-              <Link to="/parcours">Parcours</Link>
+              <Link to="/career">Parcours</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

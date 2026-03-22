@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+.career-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.career-shell {
+  position: relative;
+  margin: 0 auto;
+  padding: clamp(1.4rem, 3.5vw, 3rem);
+  border-radius: 2.8rem;
+  background:
+    linear-gradient(
+      150deg,
+      color-mix(in srgb, var(--bleu-50) 90%, transparent),
+      color-mix(in srgb, var(--bleu-100) 82%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 92%, transparent);
+  backdrop-filter: blur(26px);
+  box-shadow:
+    0 48px 90px -72px color-mix(in srgb, var(--black-900) 35%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 70%, transparent);
+}
+
+.career-shell::after {
+  content: '';
+  position: absolute;
+  width: clamp(11rem, 32vw, 17rem);
+  height: clamp(11rem, 32vw, 17rem);
+  top: -18%;
+  right: -10%;
+  pointer-events: none;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--bleu-300) 45%, transparent),
+    transparent 70%
+  );
+  filter: blur(8px);
+}
+
+.career-kicker {
+  margin: 0;
+  color: color-mix(in srgb, var(--bleu-700) 78%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.career-title {
+  margin: 0.45rem 0 0;
+  color: var(--black-900);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  text-shadow: 0 2px 4px color-mix(in srgb, var(--bleu-200) 45%, transparent);
+}
+
+.career-intro {
+  margin: 0.8rem 0 0;
+  max-width: 54ch;
+  color: color-mix(in srgb, var(--black-700) 86%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.career-timeline-wrap {
+  padding-top: 20px;
+  margin-top: clamp(1.3rem, 3.8vw, 2.8rem);
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--bleu-600) 44%, transparent) transparent;
+}
+
+.career-timeline-wrap::-webkit-scrollbar {
+  height: 9px;
+}
+
+.career-timeline-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.career-timeline-wrap::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bleu-600) 38%, transparent);
+}
+
+.career-timeline {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(16.8rem, 22.2rem);
+  gap: clamp(1rem, 2.2vw, 1.8rem);
+  width: max-content;
+  min-width: 100%;
+  margin: 0;
+  padding: 1rem 0.2rem 1rem;
+  list-style: none;
+}
+
+.career-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.06rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--bleu-700) 45%, transparent),
+    color-mix(in srgb, var(--bleu-400) 40%, transparent)
+  );
+  filter: blur(0.3px);
+}
+
+.career-item {
+  position: relative;
+  padding-top: 2.25rem;
+}
+
+.career-anchor-year {
+  position: absolute;
+  top: -2.3rem;
+  left: 2.38rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.38rem;
+  padding: 0.16rem 0.52rem;
+  border-radius: 999px;
+  color: var(--bleu-50);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  background: color-mix(in srgb, var(--bleu-700) 72%, transparent);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-300) 40%, transparent),
+    0 10px 20px -16px color-mix(in srgb, var(--black-900) 36%, transparent);
+}
+
+.career-item::before {
+  content: '';
+  position: absolute;
+  top: -0.2rem;
+  left: 1.25rem;
+  width: 0.86rem;
+  height: 0.86rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--bleu-700) 88%, var(--bleu-600)),
+    color-mix(in srgb, var(--bleu-500) 90%, var(--bleu-400))
+  );
+  box-shadow:
+    0 0 0 5px color-mix(in srgb, var(--bleu-100) 96%, transparent),
+    0 0 0 9px color-mix(in srgb, var(--bleu-500) 24%, transparent);
+}
+
+.career-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-height: 19rem;
+  padding: 1.15rem 1.15rem 1.25rem;
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--bleu-200) 54%, transparent),
+      color-mix(in srgb, var(--bleu-50) 88%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 88%, transparent);
+  backdrop-filter: blur(28px);
+  box-shadow:
+    0 32px 62px -52px color-mix(in srgb, var(--black-900) 28%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 80%, transparent);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    backdrop-filter 220ms ease;
+}
+
+.career-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--bleu-50) 72%, transparent),
+    transparent 38%
+  );
+  opacity: 0.95;
+}
+
+.career-card:hover {
+  transform: translateY(-4px);
+  backdrop-filter: blur(36px);
+  box-shadow:
+    0 36px 68px -54px color-mix(in srgb, var(--black-900) 30%, transparent),
+    0 0 0 4px color-mix(in srgb, var(--bleu-500) 18%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 92%, transparent);
+}
+
+.career-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.career-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.9rem;
+  padding: 0.28rem 0.78rem;
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: var(--bleu-50);
+}
+
+.career-tag-formation {
+  background: color-mix(in srgb, var(--bleu-700) 78%, transparent);
+}
+
+.career-tag-experience {
+  background: color-mix(in srgb, var(--bleu-900) 78%, transparent);
+}
+
+.career-period {
+  margin: 0;
+  color: color-mix(in srgb, var(--black-600) 88%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+}
+
+.career-card-title {
+  margin: 0;
+  color: var(--black-900);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.05rem, 2.3vw, 1.36rem);
+  line-height: 1.25;
+}
+
+.career-organisation-row {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.career-logo {
+  flex-shrink: 0;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 0.95rem;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--bleu-600) 72%, transparent),
+      color-mix(in srgb, var(--bleu-400) 68%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-100) 90%, transparent);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 80%, transparent),
+    0 10px 25px -20px color-mix(in srgb, var(--black-900) 25%, transparent);
+}
+
+.career-logo img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.career-logo span {
+  color: var(--bleu-50);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.career-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.14rem;
+}
+
+.career-organisation {
+  margin: 0;
+  color: color-mix(in srgb, var(--black-900) 95%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.career-location {
+  margin: 0;
+  color: color-mix(in srgb, var(--black-600) 85%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.86rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+}
+
+.career-scroll-help {
+  margin: 0.9rem 0 0;
+  color: color-mix(in srgb, var(--bleu-700) 78%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.84rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 920px) {
+  .career-timeline {
+    grid-auto-columns: minmax(15rem, 17.8rem);
+  }
+
+  .career-item:nth-child(even) {
+    margin-top: 0.95rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .career-page {
+    border-radius: 1.7rem;
+    padding: 1rem;
+  }
+
+  .career-shell {
+    border-radius: 2rem;
+    padding: 1.2rem;
+  }
+
+  .career-timeline {
+    grid-auto-columns: minmax(14rem, 15.8rem);
+    gap: 0.85rem;
+  }
+
+  .career-card {
+    min-height: 16.2rem;
+    border-radius: 1.7rem;
+  }
+
+  .career-item:nth-child(even) {
+    margin-top: 0.55rem;
+  }
+
+  .career-anchor-year {
+    left: 2.2rem;
+    font-size: 0.62rem;
+    min-height: 1.28rem;
+  }
+}
