@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+.contact-page {
+  width: 100%;
+  min-height: 100%;
+  padding: clamp(1.2rem, 3vw, 2.5rem);
+  border-radius: 2.2rem;
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      color-mix(in srgb, var(--bleu-500) 18%, transparent),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 85% 85%,
+      color-mix(in srgb, var(--bleu-400) 16%, transparent),
+      transparent 42%
+    ),
+    linear-gradient(170deg, var(--black-950) 0%, var(--black-900) 55%, var(--black-950) 100%);
+  overflow: hidden;
+}
+
+.contact-shell {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(1.4rem, 3.6vw, 3rem);
+  border-radius: 2.6rem;
+  background: color-mix(in srgb, var(--black-900) 62%, transparent);
+  backdrop-filter: blur(24px);
+  box-shadow:
+    0 35px 70px -50px color-mix(in srgb, var(--black-950) 85%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-200) 14%, transparent);
+}
+
+.contact-kicker {
+  margin: 0;
+  color: color-mix(in srgb, var(--bleu-50) 76%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.contact-title {
+  margin: 0.45rem 0 0;
+  color: var(--bleu-50);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  text-shadow: 0 2px 4px color-mix(in srgb, var(--black-950) 50%, transparent);
+}
+
+.contact-intro {
+  margin: 0.75rem 0 0;
+  max-width: 42ch;
+  color: color-mix(in srgb, var(--bleu-50) 86%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.8vw, 2rem);
+  margin-top: clamp(1.4rem, 4vw, 2.6rem);
+}
+
+.contact-card {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(1.1rem, 2.5vw, 1.8rem);
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      130deg,
+      color-mix(in srgb, var(--bleu-500) 8%, transparent),
+      color-mix(in srgb, var(--bleu-300) 4%, transparent)
+    ),
+    color-mix(in srgb, var(--black-700) 18%, transparent);
+  backdrop-filter: blur(32px);
+  box-shadow:
+    0 28px 60px -45px color-mix(in srgb, var(--black-950) 95%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-200) 20%, transparent);
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--bleu-200) 20%, transparent),
+    transparent 36%
+  );
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.contact-label {
+  margin: 0;
+  color: color-mix(in srgb, var(--bleu-200) 90%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: var(--bleu-50);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  line-height: 1.25;
+  text-decoration: none;
+  text-shadow: 0 2px 4px color-mix(in srgb, var(--black-950) 35%, transparent);
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--bleu-400) 35%, transparent));
+}
+
+.contact-help {
+  margin: 0.85rem 0 0;
+  color: color-mix(in srgb, var(--bleu-100) 82%, transparent);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 880px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card-offset {
+    transform: none;
+  }
+}
