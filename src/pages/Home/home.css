@@ -1,10 +1,181 @@
+/*  Générale */
+.home-sections-container,
+.home-section-redirection,
+.home-container {
+  --home-glass-start: color-mix(in srgb, var(--bleu-500) 26%, transparent);
+  --home-glass-end: color-mix(in srgb, var(--bleu-50) 18%, transparent);
+  --home-panel-shadow: color-mix(in srgb, var(--bleu-900) 85%, transparent);
+  --home-border-soft: color-mix(in srgb, var(--bleu-50) 50%, transparent);
+  --home-hero-border: color-mix(in srgb, var(--bleu-50) 45%, transparent);
+  --home-hero-shadow: color-mix(in srgb, var(--bleu-950) 95%, transparent);
+  --home-hero-glow: color-mix(in srgb, var(--bleu-500) 40%, transparent);
+  --home-hero-bg-a: color-mix(in srgb, var(--bleu-950) 94%, transparent);
+  --home-hero-bg-b: color-mix(in srgb, var(--bleu-900) 90%, transparent);
+  --home-cell-border: color-mix(in srgb, var(--bleu-50) 6%, transparent);
+  --home-cell-base: color-mix(in srgb, var(--bleu-50) 1%, transparent);
+  --home-content-text: var(--bleu-50);
+  --home-content-subtext: color-mix(in srgb, var(--bleu-50) 90%, transparent);
+  --home-button-border: color-mix(in srgb, var(--bleu-50) 56%, transparent);
+  --home-button-bg: color-mix(in srgb, var(--bleu-50) 14%, transparent);
+  --home-button-bg-hover: color-mix(in srgb, var(--bleu-50) 28%, transparent);
+  --home-button-shadow: color-mix(in srgb, var(--bleu-50) 95%, transparent);
+  --home-pixel-start: color-mix(in srgb, var(--bleu-50) 4%, transparent);
+  --home-pixel-end: color-mix(in srgb, var(--bleu-50) 1%, transparent);
+}
+
+.home-sections-container {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .home-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: linear-gradient(135deg, rgba(154, 185, 255, 0.26), rgba(255, 255, 255, 0.18));
-  box-shadow: 0 15px 30px -30px rgba(19, 36, 93, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, var(--home-glass-start), var(--home-glass-end));
+  box-shadow: 0 15px 30px -30px var(--home-panel-shadow);
+  border: 1px solid var(--home-border-soft);
   border-radius: 40px;
+}
+
+/* section Redirection */
+.home-section-redirection {
+  position: relative;
+  width: 100%;
+  min-height: min(78vh, 680px);
+  border-radius: 40px;
+  overflow: hidden;
+  border: 1px solid var(--home-hero-border);
+  box-shadow: 0 30px 60px -45px var(--home-hero-shadow);
+  background:
+    radial-gradient(circle at 10% 10%, var(--home-hero-glow), transparent 55%),
+    linear-gradient(120deg, var(--home-hero-bg-a), var(--home-hero-bg-b));
+}
+
+.home-redirection-background {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.pixel-cell {
+  border: 1px solid var(--home-cell-border);
+  background: var(--home-cell-base);
+}
+
+.pixel-cell.is-lit {
+  animation: pixel-glow 1.8s ease-out;
+}
+
+.home-redirection-content {
+  position: relative;
+  z-index: 1;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: clamp(28px, 4vw, 56px);
+  color: var(--home-content-text);
+  text-align: center;
+}
+
+.home-redirection-content h1 {
+  margin: 0;
+  line-height: 1.1;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+}
+
+.home-redirection-content p {
+  max-width: 58ch;
+  margin: 0;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  color: var(--home-content-subtext);
+}
+
+.home-redirection-actions {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.home-redirection-button {
+  cursor: pointer;
+  border: 1px solid var(--home-button-border);
+  border-radius: 999px;
+  background: var(--home-button-bg);
+  color: var(--home-content-text);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 12px 22px;
+  backdrop-filter: blur(3px);
+  transition:
+    transform 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.home-redirection-button:hover {
+  transform: translateY(-2px);
+  background: var(--home-button-bg-hover);
+  box-shadow: 0 10px 24px -16px var(--home-button-shadow);
+}
+
+.home-redirection-button:active {
+  transform: translateY(0);
+}
+
+@keyframes pixel-glow {
+  0% {
+    background: var(--home-pixel-start);
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  22% {
+    background: var(--bleu-300);
+    box-shadow: inset 0 0 22px 5px var(--bleu-400);
+  }
+  70% {
+    background: var(--bleu-200);
+    box-shadow: inset 0 0 14px 2px var(--bleu-300);
+  }
+  100% {
+    background: var(--home-pixel-end);
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-section-redirection {
+    min-height: min(70vh, 620px);
+  }
+
+  .home-redirection-background {
+    grid-template-columns: repeat(18, minmax(0, 1fr));
+    grid-template-rows: repeat(16, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .home-redirection-background {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(24, minmax(0, 1fr));
+  }
+
+  .home-redirection-actions {
+    gap: 10px;
+  }
+
+  .home-redirection-button {
+    width: 100%;
+  }
 }

@@ -3,12 +3,14 @@
 .contact-page {
   width: 100%;
   min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-shell {
-  position: relative;
-  margin: 0 auto;
   padding: clamp(1.4rem, 3.6vw, 3rem);
+  width: 100%;
   border-radius: 2.6rem;
   background: linear-gradient(145deg, var(--bleu-50) 0%, var(--bleu-200) 100%);
   border: 1px solid var(--bleu-300);
