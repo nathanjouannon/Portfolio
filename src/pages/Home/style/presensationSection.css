@@ -1,0 +1,97 @@
+.home-section-présentation {
+  --presentation-bg-top: color-mix(in srgb, var(--bleu-100) 72%, var(--bleu-50));
+  --presentation-bg-bottom: color-mix(in srgb, var(--bleu-200) 56%, var(--bleu-50));
+  --presentation-card-bg: color-mix(in srgb, var(--bleu-50) 72%, transparent);
+  --presentation-card-border: color-mix(in srgb, var(--bleu-400) 42%, transparent);
+  --presentation-card-shadow: color-mix(in srgb, var(--bleu-900) 24%, transparent);
+  --presentation-title: var(--bleu-900);
+  --presentation-text: var(--black-800);
+  --presentation-accent: var(--bleu-600);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: clamp(20px, 3vw, 32px);
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      120% 90% at 15% 8%,
+      color-mix(in srgb, var(--bleu-300) 45%, transparent) 0%,
+      transparent 62%
+    ),
+    linear-gradient(160deg, var(--presentation-bg-top) 0%, var(--presentation-bg-bottom) 100%);
+  color: var(--presentation-title);
+}
+
+.home-section-présentation > h1 {
+  margin: 0;
+  color: var(--presentation-title);
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  line-height: 1.1;
+}
+
+.home-section-présentation > div {
+  display: grid;
+  gap: 18px;
+}
+
+.home-section-présentation > div > div {
+  position: relative;
+  padding: clamp(18px, 2.4vw, 28px);
+  border: 1px solid var(--presentation-card-border);
+  border-radius: 20px;
+  background: var(--presentation-card-bg);
+  box-shadow: 0 12px 26px -18px var(--presentation-card-shadow);
+  backdrop-filter: blur(4px);
+}
+
+.home-section-présentation > div > div::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--presentation-accent),
+    color-mix(in srgb, var(--bleu-300) 68%, var(--bleu-50))
+  );
+}
+
+.home-section-présentation h2 {
+  margin: 8px 0 14px;
+  color: var(--presentation-title);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.2;
+}
+
+.home-section-présentation p {
+  margin: 0;
+  color: var(--presentation-text);
+  font-size: clamp(0.98rem, 1.1vw, 1.08rem);
+  line-height: 1.75;
+}
+
+@media (min-width: 980px) {
+  .home-section-présentation > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .home-section-présentation {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .home-section-présentation > h1 {
+    font-size: clamp(1.7rem, 7vw, 2.2rem);
+  }
+
+  .home-section-présentation > div > div {
+    border-radius: 16px;
+  }
+}
