@@ -3,13 +3,17 @@
 .career-page {
   width: 100%;
   min-height: 100%;
+  padding: clamp(1.4rem, 3.5vw, 3rem);
+  overflow-x: hidden;
 }
 
 .career-shell {
   position: relative;
   margin: 0 auto;
+  max-width: 100%;
   padding: clamp(1.4rem, 3.5vw, 3rem);
   border-radius: 2.8rem;
+  overflow: hidden;
   background:
     linear-gradient(
       150deg,
@@ -68,6 +72,8 @@
 }
 
 .career-timeline-wrap {
+  width: 100%;
+  max-width: 100%;
   padding-top: 20px;
   margin-top: clamp(1.3rem, 3.8vw, 2.8rem);
   padding-bottom: 0.5rem;

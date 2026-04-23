@@ -1,6 +1,7 @@
 .competences-page {
   width: 100%;
   min-height: 100%;
+  padding: clamp(1.4rem, 3.5vw, 3rem);
 }
 
 .competences-shell {

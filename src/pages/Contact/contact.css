@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: clamp(1.4rem, 3.5vw, 3rem);
 }
 
 .contact-shell {

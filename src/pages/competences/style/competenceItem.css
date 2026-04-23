@@ -1,0 +1,270 @@
+.competence-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1.2rem, 2.5vw, 2rem) clamp(1.1rem, 7vw, 7rem) clamp(2rem, 4vw, 3rem);
+}
+
+.competence-back-button {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--bleu-50) 95%, transparent),
+      color-mix(in srgb, var(--bleu-100) 82%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 88%, transparent);
+  color: var(--bleu-900);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--bleu-200) 68%, transparent);
+  box-shadow:
+    0 14px 24px -22px color-mix(in srgb, var(--black-900) 36%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 82%, transparent);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.competence-back-button:hover {
+  transform: translateY(-1px);
+  color: var(--bleu-800);
+  box-shadow:
+    0 18px 28px -22px color-mix(in srgb, var(--black-900) 42%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 82%, transparent);
+}
+
+.competence-back-button:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--bleu-700) 65%, transparent);
+  outline-offset: 3px;
+}
+
+.competence-back-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--bleu-200) 42%, transparent);
+}
+
+.competence-back-icon svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.competence-detail {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  border-radius: 2rem;
+  padding: clamp(1.3rem, 2.2vw, 2rem);
+  background:
+    linear-gradient(
+      140deg,
+      color-mix(in srgb, var(--bleu-50) 94%, transparent),
+      color-mix(in srgb, var(--bleu-100) 84%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 90%, transparent);
+  box-shadow:
+    0 24px 48px -36px color-mix(in srgb, var(--black-900) 30%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 72%, transparent);
+}
+
+.competence-detail h1 {
+  margin: 0;
+  color: var(--bleu-900);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  text-shadow: 0 2px 4px color-mix(in srgb, var(--bleu-200) 45%, transparent);
+}
+
+.competence-sub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border-radius: 1.2rem;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--bleu-50) 92%, transparent),
+      color-mix(in srgb, var(--bleu-100) 80%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 86%, transparent);
+  box-shadow:
+    0 14px 24px -24px color-mix(in srgb, var(--black-900) 34%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 80%, transparent);
+}
+
+.competence-sub-item h2 {
+  margin: 0;
+  color: var(--bleu-800);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.2;
+}
+
+.competence-sub-item p {
+  margin: 0;
+  color: color-mix(in srgb, var(--black-800) 92%, transparent);
+  font-family: var(--font-body);
+  font-size: clamp(0.98rem, 1.4vw, 1.05rem);
+  line-height: 1.75;
+}
+
+.competence-not-found {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.4rem, 2.7vw, 2.4rem);
+  border-radius: 1.8rem;
+  border: 1px solid color-mix(in srgb, var(--bleu-200) 58%, transparent);
+  background:
+    radial-gradient(
+      circle at 84% -14%,
+      color-mix(in srgb, var(--bleu-200) 52%, transparent) 0,
+      transparent 54%
+    ),
+    radial-gradient(
+      circle at -4% 104%,
+      color-mix(in srgb, var(--bleu-100) 78%, transparent) 0,
+      transparent 58%
+    ),
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--bleu-50) 95%, transparent),
+      color-mix(in srgb, var(--bleu-100) 85%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 88%, transparent);
+  box-shadow:
+    0 34px 50px -40px color-mix(in srgb, var(--black-900) 42%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 82%, transparent);
+}
+
+.competence-not-found::after {
+  content: '';
+  position: absolute;
+  right: -2.2rem;
+  top: -2.2rem;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--bleu-200) 38%, transparent);
+  filter: blur(6px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.competence-not-found-kicker {
+  margin: 0;
+  width: fit-content;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bleu-300) 65%, transparent);
+  background: color-mix(in srgb, var(--bleu-50) 76%, transparent);
+  color: var(--bleu-700);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+.competence-not-found h1 {
+  margin: 0;
+  max-width: 20ch;
+  color: var(--bleu-900);
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.competence-not-found p {
+  margin: 0;
+  max-width: 62ch;
+  color: color-mix(in srgb, var(--black-800) 90%, transparent);
+  font-family: var(--font-body);
+  font-size: clamp(0.98rem, 1.4vw, 1.06rem);
+  line-height: 1.7;
+}
+
+.competence-not-found strong {
+  color: var(--bleu-900);
+}
+
+.competence-not-found-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.competence-not-found-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bleu-300) 58%, transparent);
+  background: color-mix(in srgb, var(--bleu-50) 86%, transparent);
+  color: var(--bleu-800);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.competence-not-found-links a:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--bleu-500) 62%, transparent);
+  background: color-mix(in srgb, var(--bleu-100) 82%, transparent);
+  color: var(--bleu-900);
+}
+
+.competence-not-found-links a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--bleu-700) 62%, transparent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .competence-container {
+    padding: 1rem 1rem 2rem;
+  }
+
+  .competence-back-button {
+    margin-bottom: 0.8rem;
+  }
+
+  .competence-detail {
+    padding: 1rem;
+  }
+
+  .competence-not-found {
+    border-radius: 1.4rem;
+    padding: 1.1rem;
+  }
+}
