@@ -1,0 +1,195 @@
+.competences-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.competences-shell {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: clamp(1.4rem, 3.5vw, 3rem);
+  border-radius: 2.8rem;
+  background:
+    linear-gradient(
+      150deg,
+      color-mix(in srgb, var(--bleu-50) 92%, transparent),
+      color-mix(in srgb, var(--bleu-100) 84%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 90%, transparent);
+  backdrop-filter: blur(24px);
+  box-shadow:
+    0 44px 84px -70px color-mix(in srgb, var(--black-900) 32%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 70%, transparent);
+}
+
+.competences-shell::after {
+  content: '';
+  position: absolute;
+  width: clamp(11rem, 32vw, 17rem);
+  height: clamp(11rem, 32vw, 17rem);
+  top: -18%;
+  right: -10%;
+  pointer-events: none;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--bleu-300) 42%, transparent),
+    transparent 70%
+  );
+  filter: blur(8px);
+}
+
+.competences-kicker {
+  margin: 0;
+  color: color-mix(in srgb, var(--bleu-700) 80%, transparent);
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.competences-title {
+  margin: 0.45rem 0 0;
+  color: var(--bleu-900);
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  text-shadow: 0 2px 4px color-mix(in srgb, var(--bleu-200) 45%, transparent);
+}
+
+.competences-grid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2.8vw, 2rem);
+  margin-top: clamp(1.4rem, 4vw, 2.4rem);
+}
+
+.competence-block {
+  position: relative;
+  padding: clamp(1.1rem, 2.4vw, 1.7rem);
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--bleu-50) 94%, transparent),
+      color-mix(in srgb, var(--bleu-100) 84%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 88%, transparent);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 22px 42px -36px color-mix(in srgb, var(--black-900) 28%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 80%, transparent);
+}
+
+.competence-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--bleu-200) 36%, transparent),
+    color-mix(in srgb, var(--bleu-50) 18%, transparent)
+  );
+  opacity: 0.65;
+}
+
+.competence-block-title {
+  position: relative;
+  margin: 0;
+  color: var(--bleu-900);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+  line-height: 1.2;
+}
+
+.competence-list {
+  position: relative;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  color: color-mix(in srgb, var(--black-800) 90%, transparent);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.competence-item {
+  flex: 0 0 16.5rem;
+  width: 16.5rem;
+  min-height: 14rem;
+  display: flex;
+  text-align: center;
+  border-radius: 1.2rem;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--bleu-50) 90%, transparent),
+      color-mix(in srgb, var(--bleu-100) 76%, transparent)
+    ),
+    color-mix(in srgb, var(--bleu-50) 84%, transparent);
+  box-shadow:
+    0 16px 28px -24px color-mix(in srgb, var(--black-900) 30%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 82%, transparent);
+}
+
+.competence-link {
+  width: 100%;
+  min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.95rem;
+  padding: 1.15rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.competence-logo {
+  width: 5.2rem;
+  height: 5.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bleu-800);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+.competence-icon {
+  width: 3.8rem;
+  height: 3.8rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.competence-label {
+  color: color-mix(in srgb, var(--black-800) 95%, transparent);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .competence-item {
+    flex: 1 1 100%;
+    width: 100%;
+    min-height: 13rem;
+  }
+
+  .competence-link {
+    min-height: 13rem;
+  }
+}

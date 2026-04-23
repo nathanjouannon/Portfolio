@@ -120,7 +120,7 @@ export default function HeroSection({ onSectionRedirect }: HeroSectionProps) {
 
       <div className="home-redirection-content">
         <h1>Bienvenue sur mon portfolio</h1>
-        <p>Découvrez mes projets et compétences en développement web.</p>
+        <p>Découvrez mes projets et compétences en ingénierie logicielle.</p>
 
         <div className="home-redirection-actions">
           {redirectionLinks.map((link) => (
