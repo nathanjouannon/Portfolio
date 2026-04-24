@@ -1,16 +1,20 @@
 import { useRef } from 'react'
 import type { MouseEvent } from 'react'
+import { Link } from 'react-router-dom'
 import '../style/heroSection.css'
 
 type HeroSectionProps = {
   onSectionRedirect: (targetId: string) => void
 }
 
-const redirectionLinks = [
+type RedirectionLink = { label: string; targetId: string } | { label: string; link: string }
+
+const redirectionLinks: RedirectionLink[] = [
   { label: 'Présentation', targetId: 'home-presentation' },
-  { label: 'Compétences', targetId: 'home-skills' },
-  { label: 'Réalisations', targetId: 'home-projects' },
-  { label: 'Contact', targetId: 'home-contact' },
+  { label: 'Compétences', link: 'competences' },
+  { label: 'Projets', link: 'projets' },
+  { label: 'Parcours', link: 'career' },
+  { label: 'Contact', link: 'contact' },
 ]
 
 const pixelCells = Array.from({ length: 288 })
@@ -123,16 +127,26 @@ export default function HeroSection({ onSectionRedirect }: HeroSectionProps) {
         <p>Découvrez mes projets et compétences en ingénierie logicielle.</p>
 
         <div className="home-redirection-actions">
-          {redirectionLinks.map((link) => (
-            <button
-              key={link.targetId}
-              type="button"
-              className="home-redirection-button"
-              onClick={() => onSectionRedirect(link.targetId)}
-            >
-              {link.label}
-            </button>
-          ))}
+          {redirectionLinks.map((link) => {
+            if ('targetId' in link) {
+              return (
+                <button
+                  key={link.targetId}
+                  type="button"
+                  className="home-redirection-button"
+                  onClick={() => onSectionRedirect(link.targetId)}
+                >
+                  {link.label}
+                </button>
+              )
+            }
+
+            return (
+              <Link key={link.link} to={`/${link.link}`} className="home-redirection-button">
+                {link.label}
+              </Link>
+            )
+          })}
         </div>
       </div>
     </section>
