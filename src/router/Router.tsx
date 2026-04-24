@@ -4,6 +4,8 @@ import Contact from '../pages/Contact/Contact'
 import Career from '../pages/Career/Career'
 import CompetencesLayout from '../pages/competences/CompetencesLayout'
 import Competence from '../pages/competences/Competence'
+import ProjectLayout from '../pages/projects/ProjectLayout'
+import Projet from '../pages/projects/Projet'
 
 export default function Router() {
   return (
@@ -13,6 +15,8 @@ export default function Router() {
       <Route path="/career" element={<Career />} />
       <Route path="/competences" element={<CompetencesLayout />} />
       <Route path="/competences/:competence" element={<Competence />} />
+      <Route path="/projets" element={<ProjectLayout />} />
+      <Route path="/projet/:slug" element={<Projet />} />
     </Routes>
   )
 }

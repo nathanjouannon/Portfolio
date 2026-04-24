@@ -1,11 +1,11 @@
-.competence-container {
+.projet-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: clamp(1.2rem, 2.5vw, 2rem) clamp(1.1rem, 7vw, 7rem) clamp(2rem, 4vw, 3rem);
 }
 
-.competence-back-button {
+.projet-back-button {
   width: fit-content;
   display: inline-flex;
   align-items: center;
@@ -37,7 +37,7 @@
     background 180ms ease;
 }
 
-.competence-back-button:hover {
+.projet-back-button:hover {
   transform: translateY(-1px);
   color: var(--bleu-800);
   box-shadow:
@@ -45,12 +45,12 @@
     inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 82%, transparent);
 }
 
-.competence-back-button:focus-visible {
+.projet-back-button:focus-visible {
   outline: 2px solid color-mix(in srgb, var(--bleu-700) 65%, transparent);
   outline-offset: 3px;
 }
 
-.competence-back-icon {
+.projet-back-icon {
   width: 1.35rem;
   height: 1.35rem;
   border-radius: 999px;
@@ -60,7 +60,7 @@
   background: color-mix(in srgb, var(--bleu-200) 42%, transparent);
 }
 
-.competence-back-icon svg {
+.projet-back-icon svg {
   width: 0.9rem;
   height: 0.9rem;
   stroke: currentColor;
@@ -69,7 +69,7 @@
   stroke-linejoin: round;
 }
 
-.competence-detail {
+.projet-detail {
   display: flex;
   flex-direction: column;
   gap: clamp(1rem, 2vw, 1.5rem);
@@ -87,7 +87,22 @@
     inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 72%, transparent);
 }
 
-.competence-detail h1 {
+.projet-kicker {
+  margin: 0;
+  width: fit-content;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bleu-300) 65%, transparent);
+  background: color-mix(in srgb, var(--bleu-50) 76%, transparent);
+  color: var(--bleu-700);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+.projet-detail h1 {
   margin: 0;
   color: var(--bleu-900);
   font-family: var(--font-display);
@@ -96,7 +111,22 @@
   text-shadow: 0 2px 4px color-mix(in srgb, var(--bleu-200) 45%, transparent);
 }
 
-.competence-sub-item {
+.projet-subtitle {
+  margin: 0;
+  color: var(--bleu-800);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+
+.projet-detail > p {
+  margin: 0;
+  color: color-mix(in srgb, var(--black-800) 92%, transparent);
+  font-family: var(--font-body);
+  font-size: clamp(0.98rem, 1.4vw, 1.05rem);
+  line-height: 1.75;
+}
+
+.projet-sub-item {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -114,7 +144,7 @@
     inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 80%, transparent);
 }
 
-.competence-sub-item h2 {
+.projet-sub-item h2 {
   margin: 0;
   color: var(--bleu-800);
   font-family: var(--font-display);
@@ -122,40 +152,53 @@
   line-height: 1.2;
 }
 
-.competence-sub-item h3 {
-  margin: 0.2rem 0 0;
-  color: var(--bleu-900);
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 1.7vw, 1.2rem);
-  line-height: 1.3;
-  padding-left: 0.75rem;
-  border-left: 3px solid color-mix(in srgb, var(--bleu-500) 62%, transparent);
+.projet-chip-list,
+.projet-bullet-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.competence-sub-item p {
-  margin: 0;
+.projet-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.projet-chip-list li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bleu-300) 55%, transparent);
+  background: color-mix(in srgb, var(--bleu-50) 84%, transparent);
+  color: var(--bleu-900);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.projet-bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.projet-bullet-list li {
   color: color-mix(in srgb, var(--black-800) 92%, transparent);
   font-family: var(--font-body);
-  font-size: clamp(0.98rem, 1.4vw, 1.05rem);
-  line-height: 1.75;
+  font-size: clamp(0.96rem, 1.3vw, 1.03rem);
+  line-height: 1.7;
 }
 
-.competence-sub-item p code {
-  display: inline-block;
-  margin: 0 0.1rem;
-  padding: 0.1rem 0.45rem;
-  border-radius: 0.45rem;
-  border: 1px solid color-mix(in srgb, var(--bleu-300) 55%, transparent);
-  background: color-mix(in srgb, var(--bleu-100) 72%, transparent);
-  color: var(--bleu-900);
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-    monospace;
-  font-size: 0.9em;
-  line-height: 1.2;
+.projet-bullet-list li::before {
+  content: '•';
+  margin-right: 0.45rem;
+  color: var(--bleu-700);
 }
 
-.competence-not-found {
+.projet-not-found {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -186,21 +229,7 @@
     inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 82%, transparent);
 }
 
-.competence-not-found::after {
-  content: '';
-  position: absolute;
-  right: -2.2rem;
-  top: -2.2rem;
-  width: 10.5rem;
-  height: 10.5rem;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--bleu-200) 38%, transparent);
-  filter: blur(6px);
-  opacity: 0.55;
-  pointer-events: none;
-}
-
-.competence-not-found-kicker {
+.projet-not-found-kicker {
   margin: 0;
   width: fit-content;
   padding: 0.35rem 0.7rem;
@@ -215,7 +244,7 @@
   text-transform: uppercase;
 }
 
-.competence-not-found h1 {
+.projet-not-found h1 {
   margin: 0;
   max-width: 20ch;
   color: var(--bleu-900);
@@ -224,7 +253,7 @@
   line-height: 1.1;
 }
 
-.competence-not-found p {
+.projet-not-found p {
   margin: 0;
   max-width: 62ch;
   color: color-mix(in srgb, var(--black-800) 90%, transparent);
@@ -233,17 +262,17 @@
   line-height: 1.7;
 }
 
-.competence-not-found strong {
+.projet-not-found strong {
   color: var(--bleu-900);
 }
 
-.competence-not-found-links {
+.projet-not-found-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
 }
 
-.competence-not-found-links a {
+.projet-not-found-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -263,32 +292,32 @@
     color 180ms ease;
 }
 
-.competence-not-found-links a:hover {
+.projet-not-found-links a:hover {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--bleu-500) 62%, transparent);
   background: color-mix(in srgb, var(--bleu-100) 82%, transparent);
   color: var(--bleu-900);
 }
 
-.competence-not-found-links a:focus-visible {
+.projet-not-found-links a:focus-visible {
   outline: 2px solid color-mix(in srgb, var(--bleu-700) 62%, transparent);
   outline-offset: 2px;
 }
 
 @media (max-width: 900px) {
-  .competence-container {
+  .projet-container {
     padding: 1rem 1rem 2rem;
   }
 
-  .competence-back-button {
+  .projet-back-button {
     margin-bottom: 0.8rem;
   }
 
-  .competence-detail {
+  .projet-detail {
     padding: 1rem;
   }
 
-  .competence-not-found {
+  .projet-not-found {
     border-radius: 1.4rem;
     padding: 1.1rem;
   }
