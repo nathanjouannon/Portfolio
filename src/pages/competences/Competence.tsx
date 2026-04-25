@@ -4,6 +4,10 @@ import Communication from './commponents/Communication'
 import './style/competenceItem.css'
 import Autonomie from './commponents/Autonomie'
 import Flexibility from './commponents/Flexibility'
+import Conception from './commponents/Conception'
+import Integration from './commponents/Integration'
+import Pilotage from './commponents/Pilotage'
+import Relation from './commponents/Relation'
 
 export default function Competence() {
   const { competence } = useParams<string>()
@@ -12,7 +16,19 @@ export default function Competence() {
     { slug: 'organisation', label: 'Organisation' },
     { slug: 'communication', label: 'Communication' },
     { slug: 'autonomie', label: 'Autonomie' },
-    { slug: 'flexibilite', label: 'Flexibilite' },
+    { slug: 'conception-architecture-logicielle', label: `Conception d'architecture logicielle` },
+    {
+      slug: 'integration-industrialisation-deploiement-logicielle',
+      label: 'Intégration, industrialisation et déploiement de logicielle',
+    },
+    {
+      slug: 'pilotage-projet-ingenierie-logicielle',
+      label: `Pilotage de projet d'ingénierie logicielle`,
+    },
+    {
+      slug: 'gestion-relation-client-ingenierie-logicielle',
+      label: 'Gestion de la relation client',
+    },
   ]
 
   const normalizedCompetence = (competence ?? '').toLowerCase()
@@ -27,6 +43,14 @@ export default function Competence() {
         return <Autonomie />
       case 'flexibilite':
         return <Flexibility />
+      case 'conception-architecture-logicielle':
+        return <Conception />
+      case 'integration-industrialisation-deploiement-logicielle':
+        return <Integration />
+      case 'pilotage-projet-ingenierie-logicielle':
+        return <Pilotage />
+      case 'gestion-relation-client-ingenierie-logicielle':
+        return <Relation />
       default:
         return (
           <section className="competence-not-found" aria-live="polite">
