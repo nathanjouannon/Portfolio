@@ -275,6 +275,97 @@
   outline-offset: 2px;
 }
 
+.project-skills {
+  gap: 1.25rem;
+}
+
+.project-skills-panel {
+  margin-top: clamp(0.9rem, 2vw, 1.4rem);
+}
+
+.project-skills h2 {
+  margin: 0;
+}
+
+.project-skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-skills-group h3 {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  color: var(--bleu-900);
+  border-left: 3px solid color-mix(in srgb, var(--bleu-500) 60%, transparent);
+  padding-left: 0.7rem;
+}
+
+.project-skills-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-skill-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.project-skill-link:hover {
+  transform: translateY(-2px);
+}
+
+.project-skill-link:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--bleu-700) 60%, transparent);
+  outline-offset: 2px;
+}
+
+.project-skill-link-human {
+  background: color-mix(in srgb, var(--bleu-50) 88%, transparent);
+  border-color: color-mix(in srgb, var(--bleu-300) 56%, transparent);
+  color: var(--bleu-800);
+  box-shadow:
+    0 10px 20px -20px color-mix(in srgb, var(--black-900) 42%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 84%, transparent);
+}
+
+.project-skill-link-human:hover {
+  background: color-mix(in srgb, var(--bleu-100) 80%, transparent);
+  border-color: color-mix(in srgb, var(--bleu-500) 58%, transparent);
+  color: var(--bleu-900);
+}
+
+.project-skill-link-tech {
+  background: color-mix(in srgb, var(--bleu-200) 42%, transparent);
+  border-color: color-mix(in srgb, var(--bleu-500) 55%, transparent);
+  color: var(--bleu-900);
+  box-shadow:
+    0 12px 20px -20px color-mix(in srgb, var(--bleu-900) 40%, transparent),
+    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 72%, transparent);
+}
+
+.project-skill-link-tech:hover {
+  background: color-mix(in srgb, var(--bleu-300) 52%, transparent);
+  border-color: color-mix(in srgb, var(--bleu-700) 60%, transparent);
+  color: var(--bleu-950);
+}
+
 @media (max-width: 900px) {
   .competence-container {
     padding: 1rem 1rem 2rem;
@@ -291,5 +382,14 @@
   .competence-not-found {
     border-radius: 1.4rem;
     padding: 1.1rem;
+  }
+
+  .project-skills-links {
+    gap: 0.5rem;
+  }
+
+  .project-skill-link {
+    font-size: 0.86rem;
+    padding: 0.45rem 0.8rem;
   }
 }
