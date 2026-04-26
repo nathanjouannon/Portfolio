@@ -34,8 +34,8 @@ const competenceGroups: CompetenceGroup[] = [
         label: 'Communication',
         icon: (
           <>
-            <path d="M4 6h16v9H9l-5 4V6z" />
-            <path d="M8 10h8M8 13h5" />
+            <path d="M4 5h16v11H9l-5 4V5z" />
+            <path d="M8 9.5h8M8 13h5" />
           </>
         ),
       },
@@ -54,8 +54,15 @@ const competenceGroups: CompetenceGroup[] = [
         label: 'Flexibilité',
         icon: (
           <>
-            <path d="M6 8a4 4 0 0 1 8 0v1a4 4 0 1 1 0 8H9" />
-            <path d="M9 7l-3 3 3 3" />
+            <path d="M12 20v-4c0-2-2-2.4-2-4s2-2.2 2-4V4" />
+            <path d="M12 12L6.5 9.5" />
+            <path d="M12 12L17.5 9.5" />
+            <path d="M12 4l-1.6 2" />
+            <path d="M12 4l1.6 2" />
+            <path d="M6.5 9.5l2.1-.6" />
+            <path d="M6.5 9.5l1.1 1.9" />
+            <path d="M17.5 9.5l-2.1-.6" />
+            <path d="M17.5 9.5l-1.1 1.9" />
           </>
         ),
       },
@@ -83,7 +90,8 @@ const competenceGroups: CompetenceGroup[] = [
           <>
             <rect x="4" y="6" width="7" height="5" rx="1" />
             <rect x="13" y="13" width="7" height="5" rx="1" />
-            <path d="M11 8h2v7M11 15h2" />
+            <path d="M11 8h5v4" />
+            <path d="M14.8 11.8L16 13l1.2-1.2" />
           </>
         ),
       },
@@ -93,8 +101,9 @@ const competenceGroups: CompetenceGroup[] = [
         icon: (
           <>
             <rect x="4" y="5" width="16" height="14" rx="2" />
-            <path d="M8 10h8M8 14h5" />
-            <circle cx="17" cy="8" r="2" />
+            <path d="M8 9h5" />
+            <path d="M8.2 13l1.7 1.7 3-3" />
+            <path d="M15.5 14h2.5" />
           </>
         ),
       },
@@ -103,10 +112,8 @@ const competenceGroups: CompetenceGroup[] = [
         label: 'Gestion de la relation client en ingénierie logicielle.',
         icon: (
           <>
-            <circle cx="9" cy="9" r="3" />
-            <circle cx="15" cy="14" r="3" />
-            <path d="M11.5 10.5l1 1" />
-            <path d="M6 18c.8-1.6 2.2-2.5 4-2.5M13 18c.7-.9 1.6-1.5 3-1.8" />
+            <circle cx="12" cy="8" r="3" />
+            <path d="M6.5 18c.9-2.2 2.9-3.5 5.5-3.5s4.6 1.3 5.5 3.5" />
           </>
         ),
       },
@@ -115,10 +122,10 @@ const competenceGroups: CompetenceGroup[] = [
         label: 'Développement mobile en React-native',
         icon: (
           <>
-            <circle cx="9" cy="9" r="3" />
-            <circle cx="15" cy="14" r="3" />
-            <path d="M11.5 10.5l1 1" />
-            <path d="M6 18c.8-1.6 2.2-2.5 4-2.5M13 18c.7-.9 1.6-1.5 3-1.8" />
+            <rect x="7" y="3.5" width="10" height="17" rx="2" />
+            <path d="M9.5 6h5" />
+            <path d="M9.5 8.5h5" />
+            <circle cx="12" cy="17" r="1" />
           </>
         ),
       },
@@ -136,7 +143,7 @@ export default function CompetencesLayout() {
 
         <div className="competences-grid">
           {competenceGroups.map((group) => (
-            <div key={group.id} className="competence-block">
+            <>
               <h2 id={group.id} className="competence-block-title">
                 {group.title}
               </h2>
@@ -155,7 +162,7 @@ export default function CompetencesLayout() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </>
           ))}
         </div>
       </div>
