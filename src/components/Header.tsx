@@ -1,5 +1,5 @@
-import avatar from '../assets/avatar.jpeg'
 import { Link } from 'react-router-dom'
+import ProfilPicture from '/Profile.jpeg'
 import './style/header.css'
 
 export default function Header() {
@@ -28,7 +28,9 @@ export default function Header() {
           </ul>
         </nav>
 
-        {avatar && <img className="header-avatar" src={avatar} alt="Avatar de Nathan Jouannon" />}
+        {ProfilPicture && (
+          <img className="header-avatar" src={ProfilPicture} alt="Avatar de Nathan Jouannon" />
+        )}
       </div>
     </section>
   )

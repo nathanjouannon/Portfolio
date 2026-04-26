@@ -30,8 +30,10 @@ const careerEntries: CareerEntry[] = [
     title: 'Master “Expert en Ingénierie du Logiciel”',
     organisation: 'Iscod',
     location: 'A distance',
-    description:
-      'Formation orientee architecture logicielle, qualite de code et pilotage de projets techniques. Elle renforce mes competences en conception d applications robustes et en industrialisation du developpement.',
+    description: `
+    L'ISCOD (Institut Supérieur des Compétences et du Digital) est une école de commerce et du digital spécialisée dans la formation en alternance, proposant des cursus allant du Bac+2 au Bac+5 dans des domaines tels que le marketing, le commerce, la communication et le digital. Elle se distingue par son approche 100% en ligne pour les cours théoriques, permettant aux étudiants de combiner efficacement leur formation académique avec une expérience professionnelle en entreprise.
+
+      J’y ai réalisé une formation en alternance préparant au titre RNCP niveau 7. Le programme couvre l'analyse des besoins en architecture technique, la conception et le développement d'architectures logicielles, le management d'équipes de développement et le pilotage de projets avec les méthodes Agile et DevOps. La formation couvre l'ensemble du cycle de vie logiciel : recueil et analyse des besoins, conception de solutions, gestion de projet et maintien en conditions opérationnelles.`,
     logoAlt: 'Logo Iscod',
     logoText: 'ISCOD',
     logoSrc: ISCOD,
@@ -43,8 +45,10 @@ const careerEntries: CareerEntry[] = [
     title: 'Alternance dans le cadre du master “Expert en Ingénierie du Logiciel”',
     organisation: 'hbond®',
     location: 'Annecy',
-    description:
-      'Alternance centree sur le developpement d applications web et mobiles, avec une attention particuliere a la fiabilite, a la maintenabilite et a l amelioration continue des fonctionnalites.',
+    description: `
+      L’entreprise Hbond est une start-up basée à Annecy, fondée il y a quatre ans. Elle occupe une position unique sur son marché : elle organise la vente de matériel sportif à tarif préférentiel pour les professionnels du sport, permettant à ces derniers de s’équiper à moindre coût, tandis que les marques partenaires bénéficient en retour de leur influence comme levier marketing. Pour garantir l’exclusivité de la plateforme, la création d’un compte est conditionnée à la possession d’un diplôme d’éducateur sportif reconnu par l’État.
+      
+J’ai réalisé deux ans d’alternance dans cette entreprise dans le cadre de mon master à l’ISCOD. J’y avais déjà passé une année auparavant. J’y ai donc passé au total trois ans en alternance. J’y ai occupé le poste de développeur full stack, bien que mes missions aient été principalement frontend. J’ai néanmoins travaillé sur le backend, ainsi que sur la conception et la gestion de projet.`,
     logoAlt: 'Logo hbond',
     logoText: 'hbond',
     logoSrc: hbond,
@@ -57,8 +61,10 @@ const careerEntries: CareerEntry[] = [
     organisation: 'Wild Code School',
     location: 'A distance',
     logoSrc: WCS,
-    description:
-      'Parcours professionnalisant axe sur la programmation full stack, l integration front-end, la conception d API et le travail en equipe sur des projets concrets.',
+    description: `
+      La Wild Code School est une école de coding qui forme des développeurs web et des professionnels du digital à travers des formations disponibles en présentiel ou à distance, dans plusieurs villes en Europe. Elle propose des programmes immersifs, de 5 mois ou 1 an, axés sur les technologies les plus demandées par le marché du travail, telles que JavaScript, React ou Python, avec une pédagogie basée sur des projets concrets et le travail collaboratif.
+
+J’ai réalisé dans cette école une formation en alternance préparant au titre RNCP de niveau 6 « Concepteur développeur d’applications web et mobile ». Le programme développe les capacités de conception, développement et déploiement d’applications web et logicielles complexes, en maîtrisant aussi bien le développement front-end que back-end. Ce programme couvre des compétences telles que la modélisation de bases de données, la programmation orientée objet, la gestion de projets agiles ainsi que la sécurisation des applications.`,
   },
   {
     id: 'hbond-rncp6-alternance',
@@ -68,9 +74,10 @@ const careerEntries: CareerEntry[] = [
       'Alternance dans le cadre du titre RNCP de niveau 6 “Concepteur developper d’application web et mobile”',
     organisation: 'hbond®',
     location: 'Annecy',
-    description:
-      'Premiere experience longue en alternance dans un environnement produit. Participation a la conception, au developpement et aux evolutions de solutions digitales orientees metier.',
-    logoAlt: 'Logo hbond',
+    description: `
+      L’entreprise Hbond est une start-up basée à Annecy, fondée il y a quatre ans. Elle occupe une position unique sur son marché en organisant la vente de matériel sportif à tarifs préférentiels pour les professionnels du sport. Cette approche permet à ces derniers de s’équiper à moindre coût, tandis que les marques partenaires bénéficient en retour de leur influence comme levier marketing. Pour garantir l’exclusivité de la plateforme, la création d’un compte est conditionnée à la possession d’un diplôme d’éducateur sportif reconnu par l’État.
+
+J’ai réalisé un an d’alternance dans cette entreprise dans le cadre de mon master à l’ISCOD. J’y ai occupé le poste de développeur full stack, bien que mes missions aient été principalement frontend. J’ai néanmoins travaillé sur le backend et développé l’application mobile avec une technologie cross-platform.`,
     logoText: 'hbond',
     logoSrc: hbond,
   },
@@ -81,8 +88,10 @@ const careerEntries: CareerEntry[] = [
     title: 'Moniteur de ski ESF',
     organisation: 'ESF le Revard',
     logoSrc: ESF,
-    description:
-      'Encadrement de publics varies avec un fort besoin de pedagogie, d adaptation et de communication. Cette experience a consolide mon sens de l organisation et de la responsabilite.',
+    description: `
+    L’École du Ski Français (ESF) est le premier réseau mondial de cours de ski, présent dans la quasi-totalité des stations de ski françaises, avec plus de 17 000 moniteurs diplômés d’État. Elle propose des cours collectifs et particuliers pour tous les niveaux et tous les âges, aussi bien en ski alpin, ski de fond, snowboard qu’en d’autres disciplines de glisse.
+    
+J’ai, au sein de l’ESF, encadré des cours collectifs et particuliers, tous niveaux, enfants et adultes. J’ai adapté la progression pédagogique et le discours au profil de chaque élève.`,
   },
   {
     id: 'uga-licence',
@@ -92,8 +101,11 @@ const careerEntries: CareerEntry[] = [
     organisation: 'Universite Grenoble Alpes',
     location: 'Grenoble',
     logoSrc: UGA,
-    description:
-      'Formation scientifique generaliste ayant developpe ma rigueur analytique, ma logique de resolution de problemes et ma capacite a manipuler des concepts techniques complexes.',
+    description: `
+      L’Université Grenoble Alpes (UGA) est un établissement public d’enseignement supérieur et de recherche situé à Grenoble, en Isère, au cœur de la région Auvergne-Rhône-Alpes. Fondée en 1339 sous le nom d’Université de Grenoble, elle figure parmi les plus anciennes universités de France. Après plusieurs fusions, notamment avec les universités Grenoble-I, II et III en 2016, elle prend le nom d’UGA et devient un acteur majeur de la recherche et de l’innovation en Europe.
+      Classée parmi les 150 meilleures universités mondiales selon le QS World University Rankings 2024, l’UGA se distingue particulièrement dans les domaines des sciences et de l’ingénierie. Elle est également la première université française en sciences de l’environnement selon le Shanghai Ranking 2023.
+      
+      Au sein de cette université, j’ai obtenu une licence en sciences fondamentales, couvrant les disciplines de la physique, de la chimie, des mathématiques et de la mécanique. Les enseignements étaient orientés vers la modélisation, le raisonnement analytique, la démarche expérimentale et l’initiation à la programmation.`,
   },
   {
     id: 'cnsnm-brevet',
@@ -103,8 +115,9 @@ const careerEntries: CareerEntry[] = [
     organisation: 'CNSNM',
     location: 'Premanon',
     logoSrc: CNSNMM,
-    description:
-      'Validation d un cursus exigeant combinant technique, securite et transmission de savoir-faire. Cette etape a confirme mon gout pour l apprentissage structure et l accompagnement.',
+    description: `Le CNSNMM (Centre National de Ski Nordique et de Moyenne Montagne) est un centre d'entraînement et de formation situé à Prémanon dans le Jura, dédié au développement des sports nordiques tels que le ski de fond, le biathlon, le saut à ski et le combiné nordique. Il accueille des athlètes de haut niveau, des équipes de France, ainsi que des formations de moniteurs et d'entraîneurs, jouant un rôle clé dans la performance sportive française en montagne.
+      
+Dans ce cadre, le BE1 de ski nordique (Brevet d'État 1er degré) est une certification professionnelle qui permet d'enseigner le ski de fond et les disciplines nordiques en autonomie. Il forme des éducateurs sportifs capables d'encadrer des publics variés, du débutant au pratiquant confirmé, dans un cadre sécurisé et pédagogique.`,
   },
 ]
 
@@ -117,6 +130,17 @@ export default function Career() {
 
   const handleSelectEntry = (entryId: string) => {
     setSelectedEntryId((currentId) => (currentId === entryId ? null : entryId))
+  }
+
+  const renderDescription = (description: string) => {
+    const lines = description.split(/(?:<br\s*\/?>|\r?\n)/gi)
+
+    return lines.map((line, index) => (
+      <span key={`${line.slice(0, 12)}-${index}`}>
+        {line}
+        {index < lines.length - 1 ? <br /> : null}
+      </span>
+    ))
   }
 
   return (
@@ -201,7 +225,9 @@ export default function Career() {
                 {selectedEntry.location ? ` · ${selectedEntry.location}` : ''}
                 {` · ${selectedEntry.period}`}
               </p>
-              <p className="career-detail-description">{selectedEntry.description}</p>
+              <p className="career-detail-description">
+                {renderDescription(selectedEntry.description)}
+              </p>
             </>
           ) : (
             <p className="career-detail-empty">
