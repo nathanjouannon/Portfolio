@@ -66,7 +66,7 @@ export default function ProjectLayout() {
         </h1>
 
         <div className="project-grid">
-          <ul className="project-list">
+          <ul className="project-list project-list--five-columns">
             {projects.map((project) => (
               <li key={project.slug} className="project-item">
                 <Link className="project-link" to={`/projet/${project.slug}`}>
