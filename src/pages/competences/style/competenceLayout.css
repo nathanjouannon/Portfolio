@@ -110,7 +110,9 @@
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 0.9rem;
   color: color-mix(in srgb, var(--black-800) 90%, transparent);
   font-family: var(--font-body);
@@ -119,18 +121,22 @@
 }
 
 .competence-list-human {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
 }
 
 .competence-list-technical {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: flex;
 }
 
 .competence-item {
-  width: 100%;
-  min-height: 14rem;
+  /* flex: 0 1 clamp(12rem, 20vw, 14rem);
+  min-height: 14rem; */
+  width: 16rem;
+  min-height: 16rem;
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 1.2rem;
   background:
     linear-gradient(
@@ -190,13 +196,9 @@
 }
 
 @media (max-width: 900px) {
-  .competence-list-human,
-  .competence-list-technical {
-    grid-template-columns: 1fr;
-  }
-
   .competence-item {
-    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
     min-height: 13rem;
   }
 
