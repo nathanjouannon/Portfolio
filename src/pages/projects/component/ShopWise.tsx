@@ -1,7 +1,7 @@
 export default function ShopWise() {
   return (
     <article className="competence-detail" aria-labelledby="organisation-title">
-      <h1 id="organisation-title">Organisation</h1>
+      <h1 id="organisation-title">Projet ShopWise</h1>
       <section className="competence-sub-item">
         <h2>Introduction</h2>
         <p>
@@ -171,10 +171,10 @@ export default function ShopWise() {
           module et la manière dont ils allaient interagir entre eux.
           <br />
           <br />
-          Cette réflexion a abouti à la production d'un **diagramme de composants UML**,
-          représentant l'ensemble des modules de l'application (catalogue, ventes, sécurité,
-          recommandations) ainsi que leurs dépendances et les flux de données entre eux. Ce
-          diagramme a servi de référence commune tout au long du développement.
+          Cette réflexion a abouti à la production d'un diagramme de composants UML, représentant
+          l'ensemble des modules de l'application (catalogue, ventes, sécurité, recommandations)
+          ainsi que leurs dépendances et les flux de données entre eux. Ce diagramme a servi de
+          référence commune tout au long du développement.
           <br />
           <br />
           Sur la base de ce travail, les choix architecturaux ont été justifiés au regard de trois
@@ -191,14 +191,14 @@ export default function ShopWise() {
           et de s'assurer que les nouveaux développements s'y intégreraient de manière cohérente.
           <br />
           <br />
-          Cette analyse a été suivie de la conception d'un **schéma de base de données**, modélisant
-          les nouvelles entités nécessaires à la gestion des ventes (commandes, lignes de commande,
+          Cette analyse a été suivie de la conception d'un schéma de base de données, modélisant les
+          nouvelles entités nécessaires à la gestion des ventes (commandes, lignes de commande,
           clients) ainsi que leurs relations avec les entités déjà existantes, notamment les
           produits du catalogue.
           <br />
           <br />
-          Sur la base de ce schéma, l'**API de gestion des ventes** a ensuite été implémentée. Le
-          développement a été guidé par des **user stories**, permettant de rester centré sur les
+          Sur la base de ce schéma, l'API de gestion des ventes a ensuite été implémentée. Le
+          développement a été guidé par des user stories, permettant de rester centré sur les
           besoins concrets des utilisateurs et de livrer des fonctionnalités directement
           exploitables.
         </p>
@@ -208,28 +208,28 @@ export default function ShopWise() {
           l'application, aussi bien en termes de sécurité que de fiabilité.
           <br />
           <br />
-          Un système d'**authentification par token JWT avec OAuth2** a d'abord été mis en place,
-          permettant de sécuriser les accès à l'API. En complément, un système de **rôles** a été
-          introduit, distinguant les profils `USER` et `ADMIN`, afin de protéger les routes
-          sensibles selon le niveau de privilège de l'utilisateur connecté. La protection des
-          endpoints a été définie en se basant sur des **user stories**, garantissant que les règles
-          d'accès correspondent aux besoins réels du métier.
+          Un système d'authentification par token JWT avec OAuth2 a d'abord été mis en place,
+          permettant de sécuriser les accès à l'API. En complément, un système de rôles a été
+          introduit, distinguant les profils <code>USER</code> et <code>ADMIN</code>, afin de
+          protéger les routes sensibles selon le niveau de privilège de l'utilisateur connecté. La
+          protection des endpoints a été définie en se basant sur des user stories, garantissant que
+          les règles d'accès correspondent aux besoins réels du métier.
           <br />
           <br />
-          Un effort a également été fait sur la **normalisation des réponses d'erreur**, en
-          uniformisant les codes HTTP retournés et en adoptant un format JSON cohérent pour
-          l'ensemble des erreurs de l'API. Cela facilite la gestion des erreurs côté client et
-          améliore la lisibilité des échanges.
+          Un effort a également été fait sur la normalisation des réponses d'erreur, en uniformisant
+          les codes HTTP retournés et en adoptant un format JSON cohérent pour l'ensemble des
+          erreurs de l'API. Cela facilite la gestion des erreurs côté client et améliore la
+          lisibilité des échanges.
           <br />
           <br />
-          Enfin, des **tests à plusieurs niveaux** ont été mis en place : des tests unitaires et
+          Enfin, des tests à plusieurs niveaux ont été mis en place : des tests unitaires et
           d'intégration réalisés avec Spring Boot Starter Test et Mockito, ainsi que des tests d'API
           effectués avec Postman, couvrant les principaux scénarios d'utilisation.
         </p>
         <h3>Intégration d’un module de machine learning</h3>
         <p>
-          La dernière étape du projet consistait à enrichir l'application d'un **module de
-          recommandations** s'appuyant sur l'apprentissage automatique.
+          La dernière étape du projet consistait à enrichir l'application d'un module de
+          recommandations s'appuyant sur l'apprentissage automatique.
           <br />
           <br />
           La première phase a été de définir le périmètre fonctionnel du module. Il s'agissait de
@@ -238,7 +238,7 @@ export default function ShopWise() {
           de produits similaires ou la mise en avant des best-sellers.
           <br />
           <br />
-          Sur la base de ce périmètre, un **programme d'apprentissage automatique** a été intégré au
+          Sur la base de ce périmètre, un programme d'apprentissage automatique a été intégré au
           module, avec pour objectif d'améliorer la pertinence des recommandations en s'appuyant sur
           les tendances observées dans les données existantes plutôt que sur des règles définies
           manuellement. Un endpoint API à été mis en place pour récupérer les recommendations

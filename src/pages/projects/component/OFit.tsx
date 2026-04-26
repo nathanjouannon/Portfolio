@@ -1,7 +1,7 @@
 export default function OFit() {
   return (
     <article className="competence-detail" aria-labelledby="organisation-title">
-      <h1 id="organisation-title">Organisation</h1>
+      <h1 id="organisation-title">Projet O'Fit</h1>
       <section className="competence-sub-item">
         <h2>Introduction</h2>
         <p>

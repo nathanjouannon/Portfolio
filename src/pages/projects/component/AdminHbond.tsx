@@ -103,13 +103,12 @@ export default function AdminHbond() {
           Du côté de l'organisation du code, le repository frontend suit une architecture orientée
           "feature" : chaque fonctionnalité dispose de son propre dossier, contenant un fichier
           <code>.tsx</code> racine qui en constitue le point d'entrée. Ce dossier est ensuite
-          subdivisé en trois sous-dossiers : <code>components</code>, qui regroupe les composants
-          React réutilisables propres à la fonctionnalité, <code>styles</code>, qui contient les
-          fichiers de mise en forme associés, et <code>hooks</code>, qui centralise les hooks
-          personnalisés. Les hooks sont des fonctions spécifiques à React permettant d'encapsuler de
-          la logique réutilisable, notamment les appels à l'API backend. Ils permettent ainsi de
-          découpler la logique métier des composants d'affichage, rendant le code plus lisible et
-          plus facile à tester.
+          subdivisé en trois sous-dossiers : components, qui regroupe les composants React
+          réutilisables propres à la fonctionnalité, styles, qui contient les fichiers de mise en
+          forme associés, et hooks, qui centralise les hooks personnalisés. Les hooks sont des
+          fonctions spécifiques à React permettant d'encapsuler de la logique réutilisable,
+          notamment les appels à l'API backend. Ils permettent ainsi de découpler la logique métier
+          des composants d'affichage, rendant le code plus lisible et plus facile à tester.
           <br />
           <br />
           Le backend lui est en C# et repose sur le framework .NET. Il utilise une organisation des
@@ -220,9 +219,9 @@ export default function AdminHbond() {
           Ces échanges prenaient plusieurs formes selon les situations : des réunions dédiées pour
           cadrer les grandes évolutions, des discussions informelles au bureau pour des ajustements
           rapides, ou des échanges écrits via les outils de communication de l'équipe. Une fois les
-          besoins identifiés, ils étaient formalisés sous forme d'issues dans
-          <strong>Linear</strong>, notre outil de gestion de projet, ce qui permettait de les
-          prioriser, de les suivre et d'en garder une trace écrite.
+          besoins identifiés, ils étaient formalisés sous forme d'issues dans Linear, notre outil de
+          gestion de projet, ce qui permettait de les prioriser, de les suivre et d'en garder une
+          trace écrite.
           <br />
           <br />
           Un aspect important de cette étape était la capacité à interpréter des besoins souvent
@@ -250,12 +249,11 @@ export default function AdminHbond() {
           <br />
           <br />
           Chaque page suit une structure commune : un fichier <code>.tsx</code> racine comme point
-          d'entrée, des composants React dans le dossier <code>components</code>, la mise en forme
-          dans <code>styles</code>, et la logique métier encapsulée dans des hooks personnalisés
-          dans le dossier <code>hooks</code>. Ces hooks maison centralisent les appels à l'API
-          backend via le client HTTP développé en amont, et gèrent l'état local des données
-          affichées, ce qui permet de garder les composants d'affichage légers et focalisés sur leur
-          rôle.
+          d'entrée, des composants React dans le dossier components, la mise en forme dans styles,
+          et la logique métier encapsulée dans des hooks personnalisés dans le dossier hooks. Ces
+          hooks maison centralisent les appels à l'API backend via le client HTTP développé en
+          amont, et gèrent l'état local des données affichées, ce qui permet de garder les
+          composants d'affichage légers et focalisés sur leur rôle.
           <br />
           <br />
           Parmi les pages développées, on peut citer trois exemples représentatifs de la diversité
@@ -270,21 +268,20 @@ export default function AdminHbond() {
           demandés, pièces justificatives, autres demandes en cours et diplômes déjà validés.
           <br />
           <br />
-          La <strong>page de gestion des discounts</strong> permet de créer et gérer les remises
-          accordées aux professionnels en fonction de leurs tags (pays, organisation, activité). Les
-          discounts peuvent être temporaires ou permanentes, et chacune dispose d'une page de détail
-          affichant l'ensemble de ses caractéristiques : marque concernée, type, état, pourcentage
-          de réduction, tags éligibles et statistiques d'utilisation des coupons associés. Un second
+          La page de gestion des discounts permet de créer et gérer les remises accordées aux
+          professionnels en fonction de leurs tags (pays, organisation, activité). Les discounts
+          peuvent être temporaires ou permanentes, et chacune dispose d'une page de détail affichant
+          l'ensemble de ses caractéristiques : marque concernée, type, état, pourcentage de
+          réduction, tags éligibles et statistiques d'utilisation des coupons associés. Un second
           onglet permet de suivre la disponibilité des coupons par type de source (connexion API
           e-commerce, import CSV...) et de les régénérer si nécessaire.
           <br />
           <br />
-          La <strong>page de gestion des communications</strong> permet de créer et programmer des
-          campagnes de communication multicanal. Une fois une campagne créée, il est possible d'y
-          associer jusqu'à trois contenus de types différents : email, notification in-app ou
-          notification push. L'envoi peut ensuite être programmé et ciblé précisément en fonction
-          des tags des utilisateurs destinataires (pays, organisation, activité) ou de leurs
-          identifiants.
+          La page de gestion des communications permet de créer et programmer des campagnes de
+          communication multicanal. Une fois une campagne créée, il est possible d'y associer
+          jusqu'à trois contenus de types différents : email, notification in-app ou notification
+          push. L'envoi peut ensuite être programmé et ciblé précisément en fonction des tags des
+          utilisateurs destinataires (pays, organisation, activité) ou de leurs identifiants.
         </p>
         <h3>Ajout des tests</h3>
         <p>
@@ -293,8 +290,8 @@ export default function AdminHbond() {
           l'application.
           <br />
           <br />
-          Les tests ont été écrits avec <strong>Jest</strong> et couvrent deux niveaux. Les tests
-          unitaires portent sur des fonctions isolées à fort enjeu logique, notamment l'
+          Les tests ont été écrits avec Jest et couvrent deux niveaux. Les tests unitaires portent
+          sur des fonctions isolées à fort enjeu logique, notamment l'
           <code>ErrorFactory</code> et son système de transformation des erreurs API, ainsi que le
           système de construction de requêtes (<code>Query builder</code>) maison, qui détermine les
           règles d'éligibilité des utilisateurs à une discount. Ces fonctions étant au cœur du
@@ -321,13 +318,12 @@ export default function AdminHbond() {
           reproductible, limitant les risques d'erreurs humaines liées à un déploiement manuel.
           <br />
           <br />
-          L'application a dans un premier temps été déployée sur <strong>Vercel</strong>. Cependant,
-          le modèle tarifaire de cet outil s'est rapidement révélé contraignant : chaque nouvel
-          utilisateur devait être explicitement ajouté à la liste des accès autorisés, sous peine de
-          voir le déploiement bloqué, pour un coût de 20€ par utilisateur. Face à cette limitation,
-          nous avons migré vers <strong>Cloudflare Pages</strong>, dont le coût global est inférieur
-          à 20€ toutes options comprises, ce qui représente une économie significative pour une
-          start-up.
+          L'application a dans un premier temps été déployée sur Vercel. Cependant, le modèle
+          tarifaire de cet outil s'est rapidement révélé contraignant : chaque nouvel utilisateur
+          devait être explicitement ajouté à la liste des accès autorisés, sous peine de voir le
+          déploiement bloqué, pour un coût de 20€ par utilisateur. Face à cette limitation, nous
+          avons migré vers Cloudflare Pages, dont le coût global est inférieur à 20€ toutes options
+          comprises, ce qui représente une économie significative pour une start-up.
           <br />
           <br />
           En l'absence d'environnement de staging ( qui constitue d'ailleurs l'une des prochaines
