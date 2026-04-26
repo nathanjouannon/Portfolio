@@ -8,6 +8,7 @@ import Conception from './commponents/Conception'
 import Integration from './commponents/Integration'
 import Pilotage from './commponents/Pilotage'
 import Relation from './commponents/Relation'
+import ReactNative from './commponents/ReactNative'
 
 export default function Competence() {
   const { competence } = useParams<string>()
@@ -28,6 +29,10 @@ export default function Competence() {
     {
       slug: 'gestion-relation-client-ingenierie-logicielle',
       label: 'Gestion de la relation client',
+    },
+    {
+      slug: 'developpement-mobile-react-native',
+      label: 'Développement mobile en React-native',
     },
   ]
 
@@ -51,6 +56,8 @@ export default function Competence() {
         return <Pilotage />
       case 'gestion-relation-client-ingenierie-logicielle':
         return <Relation />
+      case 'developpement-mobile-react-native':
+        return <ReactNative />
       default:
         return (
           <section className="competence-not-found" aria-live="polite">

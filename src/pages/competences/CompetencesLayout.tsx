@@ -136,6 +136,23 @@ export default function CompetencesLayout() {
                   </span>
                 </Link>
               </li>
+
+              <li className="competence-item">
+                <Link
+                  className="competence-link"
+                  to="/competences/developpement-mobile-react-native"
+                >
+                  <span className="competence-logo" aria-hidden="true">
+                    <svg className="competence-icon" viewBox="0 0 24 24" fill="none">
+                      <circle cx="9" cy="9" r="3" />
+                      <circle cx="15" cy="14" r="3" />
+                      <path d="M11.5 10.5l1 1" />
+                      <path d="M6 18c.8-1.6 2.2-2.5 4-2.5M13 18c.7-.9 1.6-1.5 3-1.8" />
+                    </svg>
+                  </span>
+                  <span className="competence-label">Développement mobile en React-native</span>
+                </Link>
+              </li>
             </ul>
           </section>
         </div>
