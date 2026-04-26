@@ -65,46 +65,6 @@
   margin-top: clamp(1.4rem, 4vw, 2.4rem);
 }
 
-.competence-block {
-  position: relative;
-  padding: clamp(1.1rem, 2.4vw, 1.7rem);
-  border-radius: 2rem;
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--bleu-50) 94%, transparent),
-      color-mix(in srgb, var(--bleu-100) 84%, transparent)
-    ),
-    color-mix(in srgb, var(--bleu-50) 88%, transparent);
-  backdrop-filter: blur(18px);
-  box-shadow:
-    0 22px 42px -36px color-mix(in srgb, var(--black-900) 28%, transparent),
-    inset 1px 1px 0 color-mix(in srgb, var(--bleu-50) 80%, transparent);
-}
-
-.competence-block::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background: linear-gradient(
-    145deg,
-    color-mix(in srgb, var(--bleu-200) 36%, transparent),
-    color-mix(in srgb, var(--bleu-50) 18%, transparent)
-  );
-  opacity: 0.65;
-}
-
-.competence-block-title {
-  position: relative;
-  margin: 0;
-  color: var(--bleu-900);
-  font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2.3vw, 1.6rem);
-  line-height: 1.2;
-}
-
 .competence-list {
   position: relative;
   margin: 1rem 0 0;
@@ -118,6 +78,14 @@
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.55;
+}
+.competence-block-title {
+  position: relative;
+  margin: 0;
+  color: var(--bleu-900);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+  line-height: 1.2;
 }
 
 .competence-list-human {

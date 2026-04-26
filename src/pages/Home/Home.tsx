@@ -2,6 +2,8 @@ import { useRef } from 'react'
 import './home.css'
 import HeroSection from './Components/HeroSection'
 import PresentationSection from './Components/PresentationSection'
+import CompetencesSection from './Components/CompetencesSection'
+import ProjectsSection from './Components/ProjectsSection'
 
 export default function Home() {
   const presentationTitleRef = useRef<HTMLHeadingElement | null>(null)
@@ -36,8 +38,9 @@ export default function Home() {
 
       <PresentationSection titleRef={presentationTitleRef} />
 
-      {/* TODO: faire la section compétences */}
-      {/* TODO: faire la section réalisations */}
+      <CompetencesSection />
+
+      <ProjectsSection />
     </div>
   )
 }
