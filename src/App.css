@@ -16,6 +16,26 @@ body {
   width: 100%;
 }
 
+.desktop-only {
+  display: block;
+  width: 100%;
+}
+
+.mobile-tablet-only {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-tablet-only {
+    display: block;
+  }
+}
+
 /* ========================================
    LAYOUT CONTAINER - Flexbox Structure
    ======================================== */
