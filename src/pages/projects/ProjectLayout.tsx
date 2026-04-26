@@ -66,24 +66,18 @@ export default function ProjectLayout() {
         </h1>
 
         <div className="project-grid">
-          <section className="project-block" aria-labelledby="project-list-title">
-            <h2 id="project-list-title" className="project-block-title">
-              Tous les projets
-            </h2>
-
-            <ul className="project-list">
-              {projects.map((project) => (
-                <li key={project.slug} className="project-item">
-                  <Link className="project-link" to={`/projet/${project.slug}`}>
-                    <span className="project-logo" aria-hidden="true">
-                      {project.icon}
-                    </span>
-                    <span className="project-label">{project.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
+          <ul className="project-list">
+            {projects.map((project) => (
+              <li key={project.slug} className="project-item">
+                <Link className="project-link" to={`/projet/${project.slug}`}>
+                  <span className="project-logo" aria-hidden="true">
+                    {project.icon}
+                  </span>
+                  <span className="project-label">{project.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
