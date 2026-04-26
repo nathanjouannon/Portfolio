@@ -47,8 +47,8 @@ export default function ProjectLayout() {
       ),
     },
     {
-      name: 'TODO',
-      slug: 'todo',
+      name: 'Application hbond',
+      slug: 'application-hbond',
       icon: (
         <svg className="project-icon" viewBox="0 0 24 24" fill="none">
           <rect x="5" y="4" width="14" height="16" rx="2" />

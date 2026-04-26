@@ -4,13 +4,14 @@ import AdminHbond from './component/AdminHbond'
 import Mpmt from './component/Mpmt'
 import ShopWise from './component/ShopWise'
 import OFit from './component/OFit'
+import ApplicationHbond from './component/ApplicationHbond'
 
 const projectLinks = [
   { slug: 'admin-hbond', label: 'Admin hbond' },
   { slug: 'mpmt', label: 'MPMT' },
   { slug: 'shopwise', label: 'ShopWise' },
   { slug: 'o-fit', label: "O'Fit" },
-  { slug: 'todo', label: 'TODO' },
+  { slug: 'application-hbond', label: 'Application hbond' },
 ]
 
 export default function Projet() {
@@ -27,8 +28,8 @@ export default function Projet() {
         return <ShopWise />
       case 'o-fit':
         return <OFit />
-      // case 'todo':
-      //   return <TODO />
+      case 'application-hbond':
+        return <ApplicationHbond />
       default:
         return (
           <section className="projet-not-found" aria-live="polite">
