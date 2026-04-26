@@ -34,13 +34,6 @@ export default function ShopWise() {
             architecture logicielle solide, faire évoluer le périmètre fonctionnel de l'application,
             renforcer la qualité du code existant et intégrer un module de recommandation basé sur
             l'apprentissage automatique.
-            <br />
-            <br />
-            Ces ambitions ne sont pas sans défis. L'application souffrait déjà de problèmes concrets
-            : un algorithme de recommandation trop gourmand en ressources et une logique métier
-            difficile à faire évoluer en raison d'une dette technique accumulée. Ces constats
-            illustraient un risque réel pour la maintenabilité et les performances du produit, et
-            ont orienté l'ensemble des choix techniques réalisés au cours de cette mission.
           </p>
         </section>
 
@@ -84,11 +77,11 @@ export default function ShopWise() {
             <br />
             Au-delà de la stack, plusieurs contraintes structurantes ont guidé l'ensemble des choix
             de conception. Le respect du RGPD imposait une gestion sécurisée des données
-            personnelles des clients des commerces. L'architecture devait être pensée pour supporter
-            plusieurs commerces et plusieurs utilisateurs simultanément, dans une logique de
-            scalabilité. Bien que le frontend ne soit pas dans le périmètre du projet, l'interface
-            devait être conçue pour être responsive. Enfin, la modularité était une exigence
-            explicite, notamment pour isoler le module de recommandations et faciliter les
+            personnelles des clients et des commerces. L'architecture devait être pensée pour
+            supporter plusieurs commerces et plusieurs utilisateurs simultanément, dans une logique
+            de scalabilité. Bien que le frontend ne soit pas dans le périmètre du projet,
+            l'interface devait être conçue pour être responsive. Enfin, la modularité était une
+            exigence explicite, notamment pour isoler le module de recommandations et faciliter les
             évolutions futures.
             <br />
             <br />
