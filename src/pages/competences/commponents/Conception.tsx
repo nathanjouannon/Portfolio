@@ -9,52 +9,58 @@ export default function Conception() {
         <section className="competence-sub-item">
           <h2>Ma définition</h2>
           <p>
-            La conception d'architecture logicielle regroupe l'ensemble des décisions structurelles
-            prises en amont du développement : comment les composants d'un système s'organisent,
-            communiquent et pourront évoluer. C'est une compétence déterminante car une mauvaise
-            architecture génère des coûts importants et peut rendre un système impossible à
-            maintenir sur le long terme.
+            La <strong>conception d'architecture logicielle</strong> regroupe l'ensemble des
+            <strong> décisions structurelles</strong> prises en amont du développement : comment les
+            composants d'un système s'organisent, communiquent et pourront évoluer. C'est une{' '}
+            <strong>compétence déterminante</strong> car une mauvaise architecture génère des{' '}
+            <strong>coûts importants</strong> et peut rendre un système impossible à maintenir sur
+            le <strong>long terme</strong>.
             <br />
-            Plusieurs styles architecturaux existent, de l'architecture monolithique aux
-            microservices, en passant par des approches distribuées dans le Cloud. Chacun répond à
-            des contraintes différentes en termes de scalabilité, de maintenabilité ou de complexité
-            opérationnelle. Ces styles s'appuient sur des principes de conception comme SOLID ou le
-            Domain-Driven Design, qui permettent de produire un code modulaire et aligné sur les
-            réalités métier du projet.
+            Plusieurs <strong>styles architecturaux</strong> existent, de l'architecture
+            monolithique aux microservices, en passant par des approches distribuées dans le Cloud.
+            Chacun répond à des contraintes différentes en termes de <strong>scalabilité</strong>,
+            de <strong>maintenabilité</strong> ou de <strong>complexité opérationnelle</strong>. Ces
+            styles s'appuient sur des principes de conception comme <strong>SOLID</strong> ou le{' '}
+            <strong>Domain-Driven Design</strong>, qui permettent de produire un{' '}
+            <strong>code modulaire</strong> et aligné sur les réalités métier du projet.
             <br />
-            Cette compétence se distingue par sa dimension de compromis : chaque décision
-            architecturale répond à des contraintes précises de performance, de coût et de contexte
-            organisationnel. Il n'existe pas de solution universellement supérieure, seulement des
-            solutions adaptées à un projet donné.
+            Cette compétence se distingue par sa <strong>dimension de compromis</strong> : chaque
+            décision architecturale répond à des contraintes précises de{' '}
+            <strong>performance</strong>, de <strong>coût</strong> et de{' '}
+            <strong>contexte organisationnel</strong>. Il n'existe pas de solution universellement
+            supérieure, seulement des <strong>solutions adaptées</strong> à un projet donné.
           </p>
         </section>
         <section className="competence-sub-item">
           <h2>Mes éléments de preuve</h2>
           <p>
             Deux projets réalisés en solitaire dans le cadre de mes cours m'ont permis de mettre en
-            pratique la conception d'architecture logicielle de manière concrète.
+            pratique la <strong>conception d'architecture logicielle</strong> de manière concrète.
             <br />
             <br />
             Le premier, MPMT, consistait à créer de zéro un outil de gestion de tâches et de projets
-            à partir d'un scénario et d'un brief fournis. J'ai dû concevoir une architecture
-            complète et évolutive, en choisissant Angular pour le frontend et Spring Boot pour le
-            backend. Ce projet m'a amené à réfléchir à l'organisation globale du système avant
-            d'écrire la moindre ligne de code : définition des couches applicatives, séparation des
-            responsabilités, et conception d'un schéma de base de données cohérent avec les besoins
-            fonctionnels. J'ai également produit un script SQL permettant de générer la structure de
-            la base ainsi que des données de test, ce qui m'a obligé à anticiper les relations entre
-            entités dès la phase de conception.
+            à partir d'un scénario et d'un brief fournis. J'ai dû concevoir une architecture{' '}
+            <strong>complète et évolutive</strong>, en choisissant <strong>Angular</strong> pour le
+            frontend et <strong>Spring Boot</strong> pour le backend. Ce projet m'a amené à
+            réfléchir à l'<strong>organisation globale du système</strong> avant d'écrire la moindre
+            ligne de code : définition des <strong>couches applicatives</strong>,
+            <strong> séparation des responsabilités</strong>, et conception d'un
+            <strong> schéma de base de données</strong> cohérent avec les besoins fonctionnels. J'ai
+            également produit un <strong>script SQL</strong> permettant de générer la structure de
+            la base ainsi que des <strong>données de test</strong>, ce qui m'a obligé à anticiper
+            les <strong>relations entre entités</strong> dès la phase de conception.
             <br />
             <br />
             Le second projet, ShopWise, s'inscrivait dans un contexte différent : il s'agissait de
             reprendre une application existante dont l'architecture n'atteignait pas un niveau
             satisfaisant, puis de la restructurer. J'ai commencé par définir clairement les
             responsabilités de chaque module ( flux de données, dépendances entre composants ) et
-            par produire un diagramme de composants pour formaliser cette organisation. J'ai ensuite
-            conçu un schéma de base de données intégrant une nouvelle fonctionnalité de gestion des
-            ventes, permettant d'enregistrer informatiquement les transactions avec leurs produits
-            associés. Ce projet m'a confronté à une problématique fréquente en entreprise :
-            reprendre et faire évoluer une base de code existante sans déstabiliser l'ensemble.
+            par produire un <strong>diagramme de composants</strong> pour formaliser cette
+            organisation. J'ai ensuite conçu un <strong>schéma de base de données</strong> intégrant
+            une nouvelle fonctionnalité de <strong>gestion des ventes</strong>, permettant
+            d'enregistrer informatiquement les transactions avec leurs produits associés. Ce projet
+            m'a confronté à une problématique fréquente en entreprise : reprendre et faire évoluer
+            une <strong>base de code existante</strong> sans déstabiliser l'ensemble.
           </p>
         </section>
         <section className="competence-sub-item">
@@ -62,51 +68,56 @@ export default function Conception() {
           <p>
             La conception d'architecture logicielle est la compétence sur laquelle je porte le
             regard le plus critique. Si les projets scolaires m'ont permis d'en acquérir les bases,
-            je ne me sens pas encore suffisamment à l'aise pour l'exercer avec fluidité et autonomie
-            dans un contexte professionnel.
+            je ne me sens pas encore suffisamment à l'aise pour l'exercer avec{' '}
+            <strong>fluidité et autonomie</strong> dans un contexte professionnel.
             <br />
             <br />
             En alternance chez hbond, cette compétence est restée en retrait. En arrivant sur un
             projet déjà engagé, avec des ressources humaines limitées et un produit final encore en
             construction, les décisions architecturales n'étaient pas une priorité immédiate. J'ai
             pu prendre du recul sur la structure globale du système, mais sans jamais formaliser
-            cette réflexion à travers des diagrammes ou des livrables de conception.
+            cette réflexion à travers des <strong>diagrammes</strong> ou des{' '}
+            <strong>livrables de conception</strong>.
             <br />
             <br />
-            Sur le plan technique, c'est la modélisation des bases de données ( MCD, MLD, MPD ) qui
-            représente aujourd'hui mon principal axe de progression. Ces schémas sont pourtant
-            fondamentaux dans toute démarche de conception sérieuse, et je mesure encore trop
-            souvent l'effort que cela me demande de les produire correctement. Mon aisance avec UML
-            reste également perfectible, même si j'y suis davantage exercé.
+            Sur le plan technique, c'est la <strong>modélisation des bases de données</strong> (
+            MCD, MLD, MPD ) qui représente aujourd'hui mon{' '}
+            <strong>principal axe de progression</strong>. Ces schémas sont pourtant{' '}
+            <strong>fondamentaux</strong> dans toute démarche de conception sérieuse, et je mesure
+            encore trop souvent l'effort que cela me demande de les produire correctement. Mon
+            aisance avec <strong>UML</strong> reste également <strong>perfectible</strong>, même si
+            j'y suis davantage exercé.
             <br />
             <br />
             Ces lacunes sont identifiées et assumées. Elles ne freinent pas mon travail au
             quotidien, mais elles constituent un plafond que je souhaite lever, notamment par la
-            pratique sur des projets personnels qui me permettront d'expérimenter sans contrainte de
-            délai ou de contexte professionnel.
+            pratique sur des <strong>projets personnels</strong> qui me permettront d'expérimenter
+            sans contrainte de délai ou de contexte professionnel.
           </p>
         </section>
         <section className="competence-sub-item">
           <h2>Mon évolution dans cette compétence</h2>
           <p>
             Lorsque j'ai débuté ma formation, j'avais des notions sur la conception d'architecture
-            logicielle, mais sans méthode structurée pour les appliquer. Je percevais l'intérêt de
-            bien concevoir un système, sans savoir comment traduire cette intuition en décisions
-            concrètes et documentées.
+            logicielle, mais sans <strong>méthode structurée</strong> pour les appliquer. Je
+            percevais l'intérêt de bien concevoir un système, sans savoir comment traduire cette
+            intuition en <strong>décisions concrètes et documentées</strong>.
             <br />
             <br />
             C'est au cours de mon RNCP 6 ( Concepteur développeur d'applications web et mobiles )
             qu'un premier tournant s'est opéré, notamment grâce au module dédié aux bases de la
-            modélisation de bases de données. Ce module m'a donné un premier cadre méthodologique et
-            m'a permis de progresser sensiblement, même si je restais encore hésitant sur certains
-            aspects.
+            modélisation de bases de données. Ce module m'a donné un premier{' '}
+            <strong>cadre méthodologique</strong> et m'a permis de{' '}
+            <strong>progresser sensiblement</strong>, même si je restais encore hésitant sur
+            certains aspects.
             <br />
             <br />
             C'est précisément ce sentiment d'inachevé qui m'a poussé à poursuivre avec un RNCP 7 en
             ingénierie du logiciel. Je souhaitais aller plus loin, consolider ce qui restait fragile
-            et aborder la conception avec davantage de rigueur et de confiance. Mon objectif est de
-            continuer à pratiquer cette compétence, notamment à travers des projets personnels,
-            jusqu'à ce qu'elle devienne un réflexe naturel dans mon approche du développement.
+            et aborder la conception avec davantage de <strong>rigueur</strong> et de{' '}
+            <strong>confiance</strong>. Mon objectif est de continuer à pratiquer cette compétence,
+            notamment à travers des <strong>projets personnels</strong>, jusqu'à ce qu'elle devienne
+            un <strong>réflexe naturel</strong> dans mon approche du développement.
           </p>
         </section>
       </article>
