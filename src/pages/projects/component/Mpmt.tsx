@@ -8,17 +8,20 @@ export default function Mpmt() {
         <section className="competence-sub-item">
           <h2>Introduction</h2>
           <p>
-            Le projet MPMT (Modern Project Management Tool) est un projet d'étude réalisé dans le
-            cadre de mon Master "Expert en ingénierie du logiciel" à l'ISCOD, visant l'obtention
-            d'un titre RNCP de niveau 7. Il a été conduit en totale autonomie, de la conception à
-            l'industrialisation, sans collaboration externe.
+            Le projet <strong>MPMT (Modern Project Management Tool)</strong> est un projet d'étude
+            réalisé dans le cadre de mon Master "Expert en ingénierie du logiciel" à l'ISCOD, visant
+            l'obtention d'un <strong>titre RNCP de niveau 7</strong>. Il a été conduit en
+            <strong> totale autonomie</strong>, de la <strong>conception</strong> à l'
+            <strong>industrialisation</strong>, sans collaboration externe.
             <br />
             <br />
-            Dans le scénario proposé par l'énoncé, j'interviens en tant que développeur full stack
-            au sein d'une entreprise fictive appelée Code Solutions. À ce titre, j'ai eu la
-            responsabilité de concevoir et développer l'intégralité de la solution, aussi bien côté
-            frontend que backend, en respectant un cahier des charges fonctionnel et des guidelines
-            techniques imposés.
+            Dans le scénario proposé par l'énoncé, j'interviens en tant que{' '}
+            <strong>développeur full stack</strong> au sein d'une entreprise fictive appelée Code
+            Solutions. À ce titre, j'ai eu la responsabilité de{' '}
+            <strong>concevoir et développer l'intégralité de la solution</strong>, aussi bien côté{' '}
+            <strong>frontend</strong> que
+            <strong> backend</strong>, en respectant un <strong>cahier des charges</strong>{' '}
+            fonctionnel et des guidelines techniques imposés.
           </p>
         </section>
 
@@ -27,24 +30,29 @@ export default function Mpmt() {
           <p>
             Ce projet sur lequel j’ai travaillé une semaine avait pour ambition de couvrir
             l'intégralité du cycle de développement logiciel, de la conception initiale jusqu'à
-            l'industrialisation. Il poursuivait à la fois des objectifs techniques et pédagogiques.
+            l'industrialisation. Il poursuivait à la fois des objectifs
+            <strong> techniques et pédagogiques</strong>.
             <br />
             <br />
             Sur le plan pédagogique, il s'agissait de démontrer ma capacité à mener seul un projet
             logiciel complet, en mobilisant l'ensemble des compétences attendues dans le cadre du
-            titre RNCP de niveau 7 : modélisation d'un domaine métier, développement full stack,
-            mise en place de tests automatisés et industrialisation via une chaîne CI/CD.
+            titre RNCP de niveau 7 : <strong>modélisation d'un domaine métier</strong>,
+            <strong> développement full stack</strong>, mise en place de
+            <strong> tests automatisés</strong> et industrialisation via une{' '}
+            <strong>chaîne CI/CD</strong>.
             <br />
             <br />
-            Sur le plan technique, l'objectif était de concevoir et livrer un MVP fonctionnel d'une
-            plateforme de gestion de projet collaboratif destinée aux équipes de développement
-            logiciel. Cette plateforme devait permettre à ses utilisateurs de planifier, suivre et
-            collaborer efficacement sur leurs projets. L'application devait être conçue de manière
-            robuste et évolutive, avec une architecture claire séparant frontend et backend. La
-            qualité du code devait être garantie par des tests automatisés atteignant au minimum 60
-            % de couverture en instructions et en branches. Enfin, le déploiement devait être fluide
-            et reproductible grâce à la conteneurisation des services et à la mise en place d'une
-            pipeline d'intégration et de déploiement continus.
+            Sur le plan technique, l'objectif était de concevoir et livrer un{' '}
+            <strong>MVP fonctionnel</strong> d'une plateforme de gestion de projet collaboratif
+            destinée aux équipes de développement logiciel. Cette plateforme devait permettre à ses
+            utilisateurs de planifier, suivre et collaborer efficacement sur leurs projets.
+            L'application devait être conçue de manière <strong>robuste et évolutive</strong>, avec
+            une <strong>architecture claire</strong> séparant frontend et backend. La qualité du
+            code devait être garantie par des tests automatisés atteignant au minimum{' '}
+            <strong>60 % de couverture</strong>% de couverture en instructions et en branches.
+            Enfin, le déploiement devait être fluide et reproductible grâce à la{' '}
+            <strong>conteneurisation</strong> des services et à la mise en place d'une{' '}
+            <strong>pipeline d'intégration et de déploiement continus</strong>.
           </p>
         </section>
 
@@ -77,22 +85,24 @@ export default function Mpmt() {
           <p>
             La stack technique de ce projet m'a été imposée par Mariana dans le cadre des guidelines
             du projet. Il ne s'agissait donc pas de faire des choix technologiques, mais bien de
-            maîtriser et d'appliquer un ensemble d'outils définis à l'avance.
+            maîtriser et d'appliquer un <strong>ensemble d'outils définis à l'avance</strong>.
             <br />
             <br />
-            L'application repose sur une architecture classique frontend, backen et base de données.
-            Côté frontend, j'ai travaillé avec Angular, un framework JavaScript maintenu par Google,
-            reconnu pour sa robustesse et sa structure adaptée aux applications web complexes. Le
-            backend a été développé en Java avec Spring Boot, une combinaison très répandue dans le
-            monde professionnel, qui facilite notamment la mise en place d'une API REST grâce à sa
-            configuration rapide et sa polyvalence. Pour la persistance des données, j'ai opté pour
-            MySQL comme base de données relationnelle.
+            L'application repose sur une architecture classique{' '}
+            <strong>frontend, backend et base de données</strong>. Côté frontend, j'ai travaillé
+            avec Angular, un framework JavaScript maintenu par Google, reconnu pour sa robustesse et
+            sa structure adaptée aux applications web complexes. Le backend a été développé en{' '}
+            <strong>Java avec Spring Boot</strong>, une combinaison très répandue dans le monde
+            professionnel, qui facilite notamment la mise en place d'une <strong>API REST</strong>{' '}
+            grâce à sa configuration rapide et sa polyvalence. Pour la persistance des données, j'ai
+            opté pour <strong>MySQL</strong> comme base de données relationnelle.
             <br />
             <br />
-            Le code source a été versionné avec Git sur un dépôt GitHub, ce qui permettait de suivre
-            l'évolution du projet de manière propre et traçable. Pour l'environnement de
-            développement, j'ai utilisé IntelliJ IDEA, un IDE que je maîtrise et qui offre un
-            excellent support pour les projets Java Spring.
+            Le code source a été versionné avec <strong>Git</strong> sur un dépôt
+            <strong> GitHub</strong>, ce qui permettait de suivre l'évolution du projet de manière
+            propre et traçable. Pour l'environnement de développement, j'ai utilisé{' '}
+            <strong>IntelliJ IDEA</strong>, un IDE que je maîtrise et qui offre un excellent support
+            pour les projets Java Spring.
             <br />
             <br />
             Un point notable concernant le frontend : aucune maquette n'avait été fournie. J'ai donc
@@ -107,26 +117,29 @@ export default function Mpmt() {
             Les enjeux de ce projet s'articulent autour de plusieurs dimensions étroitement liées.
             <br />
             <br />
-            Le premier enjeu est fonctionnel. L'application doit répondre à un besoin concret :
-            offrir aux équipes de développement logiciel un outil leur permettant de planifier,
-            suivre et collaborer sur leurs projets de manière efficace. Cela implique un suivi de
-            l'avancement des tâches en temps réel, ainsi que des mécanismes de notification et
-            d'historisation.
+            Le premier enjeu est <strong>fonctionnel</strong>. L'application doit répondre à un
+            besoin concret : offrir aux équipes de développement logiciel un outil leur permettant
+            de planifier, suivre et collaborer sur leurs projets de manière efficace. Cela implique
+            un suivi de l'avancement des tâches en <strong>temps réel</strong>, ainsi que des
+            mécanismes de
+            <strong> notification</strong> et d'<strong>historisation</strong>.
             <br />
             <br />
-            Le second enjeu est technique. Il s'agit de concevoir une architecture robuste et
-            évolutive, capable de supporter l'ensemble des fonctionnalités attendues tout en
-            respectant les bonnes pratiques de développement. La qualité du code doit être garantie
-            par des tests automatisés, avec une couverture minimale de 60% aussi bien côté frontend
-            que backend.
+            Le second enjeu est <strong>technique</strong>. Il s'agit de concevoir une architecture
+            robuste et évolutive, capable de supporter l'ensemble des fonctionnalités attendues tout
+            en respectant les <strong>bonnes pratiques de développement</strong>. La qualité du code
+            doit être garantie par des tests automatisés, avec une couverture minimale de{' '}
+            <strong>60%</strong> aussi bien côté frontend que backend.
             <br />
             <br />
-            Enfin, le troisième enjeu est industriel. Au-delà du développement de l'application, le
-            projet exige une mise en production maîtrisée. Cela passe par la conteneurisation de
-            l'application avec Docker et la mise en place d'une pipeline CI/CD avec GitHub Actions,
-            permettant d'automatiser les phases de build, de test et de déploiement. L'objectif est
-            de livrer non pas seulement une application fonctionnelle, mais un produit
-            industrialisé, documenté et déployable de manière fiable et reproductible.
+            Enfin, le troisième enjeu est <strong>industriel</strong>. Au-delà du développement de
+            l'application, le projet exige une <strong>mise en production maîtrisée</strong>. Cela
+            passe par la conteneurisation de l'application avec <strong>Docker</strong> et la mise
+            en place d'une pipeline CI/CD avec <strong>GitHub Actions</strong>, permettant
+            d'automatiser les phases de build, de test et de déploiement. L'objectif est de livrer
+            non pas seulement une application fonctionnelle, mais un produit
+            <strong> industrialisé, documenté et déployable</strong> de manière fiable et
+            reproductible.
           </p>
         </section>
 
@@ -134,23 +147,25 @@ export default function Mpmt() {
           <h2>Les risques</h2>
           <p>
             Plusieurs risques ont pu être identifiés avant le démarrage du projet. Le premier
-            concerne la couverture de tests. L'énoncé impose un seuil minimal de 60% de couverture
-            de code, aussi bien côté frontend que backend. Atteindre ce niveau de couverture sur
-            l'ensemble des fonctionnalités représente un effort significatif, et le risque était de
-            sous-estimer le temps nécessaire à la rédaction des tests au profit du développement
-            pur.
+            concerne la <strong>couverture de tests</strong>. L'énoncé impose un seuil minimal de
+            <strong> 60%</strong> de couverture de code, aussi bien côté frontend que backend.
+            Atteindre ce niveau de couverture sur l'ensemble des fonctionnalités représente un
+            effort significatif, et le risque était de sous-estimer le temps nécessaire à la
+            rédaction des tests au profit du développement pur.
             <br />
             <br />
-            Un second risque porte sur la complexité de la gestion des rôles. Le système de
-            permissions à trois niveaux (administrateur, membre, observateur) implique une logique
-            métier rigoureuse. Une mauvaise modélisation en amont aurait pu engendrer des
-            incohérences fonctionnelles difficiles à corriger une fois le développement avancé.
+            Un second risque porte sur la <strong>complexité de la gestion des rôles</strong>. Le
+            système de permissions à trois niveaux (administrateur, membre, observateur) implique
+            une logique métier rigoureuse. Une mauvaise modélisation en amont aurait pu engendrer
+            des <strong>incohérences fonctionnelles</strong> difficiles à corriger une fois le
+            développement avancé.
             <br />
             <br />
-            Enfin, la pipeline CI/CD représentait également un point de risque. La configuration de
-            GitHub Actions, couplée à la conteneurisation Docker et au push automatique sur Docker
-            Hub, est une chaîne avec de nombreux points de défaillance potentiels. Une mauvaise
-            configuration aurait pu bloquer l'ensemble du processus de déploiement.
+            Enfin, la <strong>pipeline CI/CD</strong> représentait également un point de risque. La
+            configuration de GitHub Actions, couplée à la conteneurisation Docker et au push
+            automatique sur Docker Hub, est une chaîne avec de nombreux points de défaillance
+            potentiels. Une mauvaise configuration aurait pu bloquer l'ensemble du{' '}
+            <strong>processus de déploiement</strong>.
           </p>
         </section>
 
@@ -163,16 +178,17 @@ export default function Mpmt() {
             métier et de modéliser leurs relations.
             <br />
             <br />
-            Cette réflexion a abouti à la réalisation d'un schéma de base de données, représentant
-            l'ensemble des entités de l'application ( utilisateurs, projets, tâches, rôles,
-            historique des modifications ) ainsi que les relations entre elles. Ce schéma a servi de
-            socle à toute la conception technique du projet.
+            Cette réflexion a abouti à la réalisation d'un{' '}
+            <strong>schéma de base de données</strong>, représentant l'ensemble des entités de
+            l'application ( utilisateurs, projets, tâches, rôles, historique des modifications )
+            ainsi que les relations entre elles. Ce schéma a servi de
+            <strong>socle</strong> à toute la conception technique du projet.
             <br />
             <br />
-            Sur la base de ce schéma, un script SQL a ensuite été produit, avec deux objectifs : la
-            création de la structure de la base de données (tables, contraintes, relations) d'une
-            part, et l'insertion de données de test d'autre part, permettant de disposer d'un
-            environnement fonctionnel dès le début du développement.
+            Sur la base de ce schéma, un <strong>script SQL</strong> a ensuite été produit, avec
+            deux objectifs : la création de la structure de la base de données (tables, contraintes,
+            relations) d'une part, et l'insertion de <strong>données de test</strong> d'autre part,
+            permettant de disposer d'un environnement fonctionnel dès le début du développement.
           </p>
           <h3>Développement</h3>
           <p>
@@ -200,38 +216,39 @@ export default function Mpmt() {
           <h3>Ajout de tests</h3>
           <p>
             Les tests ont été mis en place des deux côtés de l'application, avec un objectif de
-            couverture minimum de 60% sur les instructions et les branches.
+            <strong>couverture minimum de 60%</strong> sur les instructions et les branches.
             <br />
             <br />
-            Côté frontend, j'ai utilisé Jest pour écrire les tests unitaires et d'intégration. Les
-            tests couvrent les composants et services Angular, en vérifiant le comportement des
-            différentes fonctionnalités de l'interface. Jest génère également le rapport de
-            couverture de code, permettant de visualiser précisément les parties du code testées.
+            Côté frontend, j'ai utilisé <strong>Jest</strong> pour écrire les tests unitaires et
+            d'intégration. Les tests couvrent les composants et services Angular, en vérifiant le
+            comportement des différentes fonctionnalités de l'interface. Jest génère également le
+            rapport de couverture de code, permettant de visualiser précisément les parties du code
+            testées.
             <br />
             <br />
-            Côté backend, j'ai utilisé Spring Boot Starter Test en combinaison avec Mockito, une
-            dépendance qui regroupe l'ensemble des outils nécessaires aux tests, dont JUnit et
-            Mockito. Mockito permet de simuler les dépendances, comme les repositories, afin de
-            tester la logique métier de manière isolée. Le rapport de couverture est généré avec
-            JaCoCo, qui produit un rapport détaillé indiquant le taux de couverture par classe,
-            méthode, instruction et branche.
+            Côté backend, j'ai utilisé <strong>Spring Boot Starter Test</strong> en combinaison avec{' '}
+            <strong>Mockito</strong>, une dépendance qui regroupe l'ensemble des outils nécessaires
+            aux tests, dont JUnit et Mockito. Mockito permet de simuler les dépendances, comme les
+            repositories, afin de tester la logique métier de manière isolée. Le rapport de
+            couverture est généré avec <strong>JaCoCo</strong>, qui produit un rapport détaillé
+            indiquant le taux de couverture par classe, méthode, instruction et branche.
           </p>
           <h3>Industrialisation</h3>
           <p>
-            Pour industrialiser le projet, j'ai conteneurisé chaque composant de l'application via
-            un Dockerfile dédié. J'ai créé un Dockerfile pour le backend Spring Boot et un second
-            pour le frontend Angular. J'ai ensuite mis en place un fichier docker-compose pour
-            orchestrer l'ensemble des services : le backend, le frontend, ainsi que la base de
-            données MySQL, pour laquelle j'ai utilisé l'image officielle. J'ai également configuré
-            un volume Docker afin de persister les données de la base entre les redémarrages des
-            containers.
+            Pour industrialiser le projet, j'ai <strong>conteneurisé</strong> chaque composant de
+            l'application via un <strong>Dockerfile</strong> dédié. J'ai créé un Dockerfile pour le
+            backend Spring Boot et un second pour le frontend Angular. J'ai ensuite mis en place un
+            fichier <strong>docker-compose</strong> pour orchestrer l'ensemble des services : le
+            backend, le frontend, ainsi que la base de données MySQL, pour laquelle j'ai utilisé
+            l'image officielle. J'ai également configuré un volume Docker afin de persister les
+            données de la base entre les redémarrages des containers.
             <br />
             <br />
-            Pour automatiser le déploiement, j'ai configuré un pipeline GitHub Actions qui s'exécute
-            à chaque push. Ce pipeline enchaîne trois étapes : la compilation et construction du
-            projet, l'exécution des tests pour valider le bon fonctionnement, et enfin si tout les
-            tests sont passés, la construction et la publication automatique d'une image Docker sur
-            Docker Hub.
+            Pour automatiser le déploiement, j'ai configuré un{' '}
+            <strong>pipeline GitHub Actions</strong> qui s'exécute à chaque push. Ce pipeline
+            enchaîne trois étapes : la compilation et construction du projet, l'exécution des tests
+            pour valider le bon fonctionnement, et enfin si tout les tests sont passés, la
+            construction et la publication automatique d'une image Docker sur Docker Hub.
           </p>
           <h3>Documentation</h3>
           <p>
@@ -266,16 +283,17 @@ export default function Mpmt() {
         <section className="competence-sub-item">
           <h2>Ce que je retiens</h2>
           <p>
-            Ce projet m'a apporté une expérience concrète de la création d'une application web
-            complète, de zéro jusqu'à une version prête à être livrée et déployée sur un VPS par
-            exemple. Avoir traversé toutes les étapes, du développement à la conteneurisation en
-            passant par les tests et la documentation, m'a permis d'avoir une vision globale du
-            cycle de vie d'un projet.
+            Ce projet m'a apporté une <strong>expérience concrète</strong> de la création d'une
+            application web complète, de zéro jusqu'à une version prête à être livrée et déployée
+            sur un VPS par exemple. Avoir traversé toutes les étapes, du développement à la
+            conteneurisation en passant par les tests et la documentation, m'a permis d'avoir une{' '}
+            <strong>vision globale du cycle de vie</strong> d'un projet.
             <br />
             <br />
-            Si je devais identifier un regret, c'est de ne pas avoir réalisé la mise en production
-            sur un vrai VPS. Je pense que cette étape m'aurait apporté une expérience supplémentaire
-            précieuse, notamment sur la gestion d'un environnement de production réel.
+            Si je devais identifier un regret, c'est de ne pas avoir réalisé la{' '}
+            <strong>mise en production</strong> sur un vrai VPS. Je pense que cette étape m'aurait
+            apporté une expérience supplémentaire précieuse, notamment sur la gestion d'un
+            environnement de production réel.
           </p>
         </section>
       </article>

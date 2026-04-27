@@ -9,25 +9,27 @@ export default function AdminHbond() {
           <h2>Introduction</h2>
           <p>
             Cette réalisation s'inscrit dans le cadre de mon master "Expert en ingénierie du
-            logiciel" au sein de l'ISCOD, effectué en alternance sur deux ans au sein de
-            l'entreprise hbond.
+            logiciel" au sein de l'ISCOD, effectué en <strong>alternance sur deux ans</strong> au
+            sein de l'entreprise <strong>hbond</strong>.
             <br />
             <br />
-            hbond est une start-up basée à Annecy, fondée il y a quatre ans. Elle occupe une
-            position unique sur son marché : elle organise la vente de matériel sportif à tarif
-            préférentiel pour les professionnels du sport, permettant à ces derniers de s'équiper à
-            moindre coût, tandis que les marques partenaires bénéficient en retour de leur influence
-            comme levier marketing. Pour garantir l'exclusivité de la plateforme, la création d'un
-            compte est conditionnée à la possession d'un diplôme d'éducateur sportif reconnu par
-            l'État. La vérification peut s'effectuer de deux manières : soit automatiquement via une
-            connexion à l'API publique du ministère des Sports grâce à la carte professionnelle
+            hbond est une <strong>start-up</strong> basée à Annecy, fondée il y a quatre ans. Elle
+            occupe une position unique sur son marché : elle organise la vente de matériel sportif à
+            tarif préférentiel pour les professionnels du sport, permettant à ces derniers de
+            s'équiper à moindre coût, tandis que les marques partenaires bénéficient en retour de
+            leur influence comme levier marketing. Pour garantir l'
+            <strong>exclusivité de la plateforme</strong>, la création d'un compte est conditionnée
+            à la possession d'un diplôme d'éducateur sportif reconnu par l'État. La vérification
+            peut s'effectuer de deux manières : soit automatiquement via une connexion à l'
+            <strong>API publique du ministère des Sports</strong> grâce à la carte professionnelle
             d'éducateur sportif, soit manuellement par l'upload d'un justificatif vérifié par un
             administrateur hbond.
             <br />
             <br />
-            Mon poste est celui de développeur full stack, avec une dominante frontend. J'ai été en
-            charge de la modification des pages existantes, de la création des pages manquantes, de
-            l'écriture des tests et de la mise en production de l'application.
+            Mon poste est celui de <strong>développeur full stack</strong>, avec une{' '}
+            <strong>dominante frontend</strong>. J'ai été en charge de la modification des pages
+            existantes, de la création des pages manquantes, de l'écriture des tests et de la{' '}
+            <strong>mise en production</strong> de l'application.
           </p>
         </section>
 
@@ -35,10 +37,12 @@ export default function AdminHbond() {
           <h2>Les objectifs</h2>
           <p>
             Le projet fait également face à des objectifs techniques. Nous pouvons notament citer
-            l’objectf de mettre à disposition une application web pour les admin de l’entreprise.
-            L’objectif est que l’application respect les normes en terme de sécurité. Elle doit
-            aussi être facile d’utilisation et apporté une solutions aux demandes et fonctionnalités
-            demandé. Sa mise en production doit être faite de manière fluide sans ajout de bugs.
+            l’objectf de mettre à disposition une <strong>application web</strong> pour les admin de
+            l’entreprise. L’objectif est que l’application respect les{' '}
+            <strong>normes de sécurité</strong>. Elle doit aussi être{' '}
+            <strong>facile d’utilisation</strong> et apporté une solutions aux demandes et
+            fonctionnalités demandé. Sa mise en production doit être faite de manière fluide{' '}
+            <strong>sans ajout de bugs</strong>.
             <br />
             <br />
             Ce projet s'est étalé sur l'ensemble de mes deux ans d'alternance chez hbond, en tant
@@ -53,13 +57,14 @@ export default function AdminHbond() {
             travail réalisé, le développeur backend pour échanger autour de la documentation de
             l'API et lui signaler les éventuels bugs rencontrés lors de l'implémentation, et enfin
             un second développeur pour les sessions de review de code. Un objectif transversal était
-            également de coordonner efficacement ces différentes parties prenantes pour maintenir
-            une avancée fluide sur le projet malgré une équipe distribuée.
+            également de <strong>coordonner efficacement</strong> ces différentes{' '}
+            <strong>parties prenantes</strong> pour maintenir une avancée fluide sur le projet
+            malgré une <strong>équipe distribuée</strong>.
             <br />
             Sur le plan technique, l'objectif est de mettre à disposition des équipes internes une
-            application web d'administration complète, sécurisée et facile à prendre en main. Elle
-            doit répondre aux fonctionnalités demandées et être déployée en production sans
-            introduire de régressions.
+            application web d'administration <strong>complète</strong>, <strong>sécurisée</strong>{' '}
+            et facile à prendre en main. Elle doit répondre aux fonctionnalités demandées et être
+            déployée en production <strong>sans introduire de régressions</strong>.
           </p>
         </section>
 
@@ -85,17 +90,18 @@ export default function AdminHbond() {
           </p>
           <h3>Contexte technique</h3>
           <p>
-            Sur le plan technique, l'application web est composée de deux services distincts : un
-            backend et une interface utilisateur (frontend).
+            Sur le plan technique, l'application web est composée de deux services distincts : un{' '}
+            <strong>backend</strong> et une interface utilisateur (<strong>frontend</strong>).
             <br />
             <br />
             Juste avant le début de ce projet, le frontend a fait l'objet d'une refonte complète,
             sans ajout de nouvelles fonctionnalités. L'objectif était de moderniser une base de code
-            Angular vieillissante et accumulant de nombreuses mauvaises pratiques, en migrant vers
-            React avec TypeScript. Ce choix technologique permet de bénéficier d'une meilleure
-            maintenabilité, d'un typage statique réduisant les erreurs à la compilation et d'un
-            écosystème plus moderne. Cette migration a également été l'occasion de repenser
-            entièrement le design UI/UX de l'application.
+            Angular vieillissante et accumulant de nombreuses mauvaises pratiques, en migrant vers{' '}
+            <strong>React avec TypeScript</strong>. Ce choix technologique permet de bénéficier
+            d'une meilleure maintenabilité, d'un <strong>typage statique</strong> réduisant les
+            erreurs à la compilation et d'un écosystème plus moderne. Cette migration a également
+            été l'occasion de repenser entièrement le <strong>design UI/UX</strong> de
+            l'application.
             <br />
             <br />
             L'interface utilisateur s'articule autour d'un dashboard principal et d'un menu de
@@ -105,26 +111,30 @@ export default function AdminHbond() {
             d'invitation.
             <br />
             <br />
-            Du côté de l'organisation du code, le repository frontend suit une architecture orientée
-            "feature" : chaque fonctionnalité dispose de son propre dossier, contenant un fichier
+            Du côté de l'organisation du code, le repository frontend suit une{' '}
+            <strong>architecture orientée "feature"</strong> : chaque fonctionnalité dispose de son
+            propre dossier, contenant un fichier
             <code>.tsx</code> racine qui en constitue le point d'entrée. Ce dossier est ensuite
             subdivisé en trois sous-dossiers : components, qui regroupe les composants React
             réutilisables propres à la fonctionnalité, styles, qui contient les fichiers de mise en
             forme associés, et hooks, qui centralise les hooks personnalisés. Les hooks sont des
             fonctions spécifiques à React permettant d'encapsuler de la logique réutilisable,
-            notamment les appels à l'API backend. Ils permettent ainsi de découpler la logique
-            métier des composants d'affichage, rendant le code plus lisible et plus facile à tester.
+            notamment les appels à l'API backend. Ils permettent ainsi de{' '}
+            <strong>découpler la logique métier</strong> des composants d'affichage, rendant le code
+            plus lisible et plus facile à tester.
             <br />
             <br />
-            Le backend lui est en C# et repose sur le framework .NET. Il utilise une organisation
-            des fichiers différente qui repose sur les principes du clean code. Le clean code est
-            une approche de développement logiciel qui vise à produire un code lisible, maintenable
-            et compréhensible par n'importe quel développeur. Il repose sur des principes tels que
-            la séparation des responsabilités, le nommage explicite des variables et des fonctions,
-            la réduction de la complexité cyclomatique, et l'organisation du code en couches
-            distinctes (comme les couches Domain, Application, Infrastructure et Presentation dans
-            une architecture Clean Architecture). L'objectif est de rendre le code auto-documenté,
-            facile à tester et évolutif sur le long terme.
+            Le backend lui est en <strong>C#</strong> et repose sur le framework{' '}
+            <strong>.NET</strong>. Il utilise une organisation des fichiers différente qui repose
+            sur les principes du clean code. Le clean code est une approche de développement
+            logiciel qui vise à produire un code lisible, maintenable et compréhensible par
+            n'importe quel développeur. Il repose sur des principes tels que la{' '}
+            <strong>séparation des responsabilités</strong>, le nommage explicite des variables et
+            des fonctions, la réduction de la complexité cyclomatique, et l'organisation du code en
+            couches distinctes (comme les couches Domain, Application, Infrastructure et
+            Presentation dans une architecture <strong>Clean Architecture</strong>). L'objectif est
+            de rendre le code auto-documenté, facile à tester et{' '}
+            <strong>évolutif sur le long terme</strong>.
           </p>
         </section>
 
@@ -133,16 +143,18 @@ export default function AdminHbond() {
           <p>
             L'enjeu principal de ce projet est d'offrir une autonomie complète aux équipes
             non-techniques de l'entreprise. Avant la mise en place de cet outil, toute manipulation
-            de données nécessitait une intervention directe en base de données, une pratique
-            risquée, chronophage et inaccessible aux profils non-développeurs. L'admin doit donc
-            servir d'interface sécurisée entre ces équipes et l'API backend, leur permettant de
-            réaliser elles-mêmes les opérations du quotidien : création et gestion des discounts,
-            validation des certifications, gestion des codes d'invitation ou encore suivi des
-            statistiques. Au-delà de l'autonomie opérationnelle, l'outil représente également un
-            enjeu stratégique pour le CEO, qui a besoin de suivre en temps réel les indicateurs clés
-            de la plateforme afin de piloter les décisions commerciales et marketing. L'outil admin
-            devient ainsi un point central de l'organisation interne de l'entreprise, utilisé
-            quotidiennement par plusieurs membres de l'équipe aux profils variés.
+            de données nécessitait une intervention directe en base de données, une pratique{' '}
+            <strong>risquée</strong>, chronophage et inaccessible aux profils non-développeurs.
+            L'admin doit donc servir d'<strong>interface sécurisée</strong> entre ces équipes et
+            l'API backend, leur permettant de réaliser elles-mêmes les opérations du quotidien :
+            création et gestion des discounts, validation des certifications, gestion des codes
+            d'invitation ou encore suivi des statistiques. Au-delà de l'
+            <strong>autonomie opérationnelle</strong>, l'outil représente également un enjeu
+            stratégique pour le CEO, qui a besoin de suivre en temps réel les indicateurs clés de la
+            plateforme afin de piloter les décisions commerciales et marketing. L'outil admin
+            devient ainsi un <strong>point central</strong> de l'organisation interne de
+            l'entreprise, utilisé quotidiennement par plusieurs membres de l'équipe aux profils
+            variés.
           </p>
         </section>
 
@@ -150,21 +162,22 @@ export default function AdminHbond() {
           <h2>Les risques</h2>
           <p>
             Le projet présente plusieurs risques qu'il est important d'identifier et de maîtriser
-            tout au long du développement. Le premier risque est celui de l'introduction de
-            régressions lors des mises en production. Chaque nouvelle fonctionnalité ou modification
-            du code peut potentiellement introduire des bugs et engendrer une perte de service pour
-            les utilisateurs de l'admin, voire impacter indirectement la plateforme principale.
+            tout au long du développement. Le premier risque est celui de l'introduction de{' '}
+            <strong>régressions</strong> lors des mises en production. Chaque nouvelle
+            fonctionnalité ou modification du code peut potentiellement introduire des bugs et
+            engendrer une perte de service pour les utilisateurs de l'admin, voire impacter
+            indirectement la plateforme principale.
             <br />
-            Le deuxième risque est lié à la sécurité de l'application. L'outil admin donne accès à
-            des données sensibles de l'entreprise et de ses utilisateurs. Une faille de sécurité
-            pourrait permettre à des personnes non autorisées d'accéder à ces informations, de les
-            modifier ou de les supprimer, mettant en danger l'intégrité des données et la confiance
-            des partenaires et des professionnels inscrits sur la plateforme. Enfin, le troisième
-            risque concerne la cybersécurité de manière plus large. En tant qu'application exposée
-            sur le web, l'admin est une surface d'attaque potentielle. Il est donc essentiel de
-            s'assurer que les mécanismes d'authentification, de gestion des rôles et de
-            communication avec le backend respectent les bonnes pratiques en vigueur pour limiter
-            les vecteurs d'attaque.
+            Le deuxième risque est lié à la <strong>sécurité</strong> de l'application. L'outil
+            admin donne accès à des <strong>données sensibles</strong> de l'entreprise et de ses
+            utilisateurs. Une faille de sécurité pourrait permettre à des personnes non autorisées
+            d'accéder à ces informations, de les modifier ou de les supprimer, mettant en danger
+            l'intégrité des données et la confiance des partenaires et des professionnels inscrits
+            sur la plateforme. Enfin, le troisième risque concerne la <strong>cybersécurité</strong>{' '}
+            de manière plus large. En tant qu'application exposée sur le web, l'admin est une{' '}
+            <strong>surface d'attaque potentielle</strong>. Il est donc essentiel de s'assurer que
+            les mécanismes d'authentification, de gestion des rôles et de communication avec le
+            backend respectent les bonnes pratiques en vigueur pour limiter les vecteurs d'attaque.
           </p>
         </section>
 
@@ -190,17 +203,18 @@ export default function AdminHbond() {
             Lors des premiers développements, il est apparu que la gestion des appels API manquait
             de structure : le code était dupliqué à chaque nouvel appel, les réponses n'étaient pas
             typées et les erreurs n'étaient pas traitées de manière centralisée. Pour y remédier,
-            j'ai conçu et développé une librairie cliente HTTP propre à hbond, construite sur la
-            base du
+            j'ai conçu et développé une <strong>librairie cliente HTTP</strong> propre à hbond,
+            construite sur la base du
             <code>fetch</code> natif et publiée en tant que package privé sur GitHub Packages. Ce
             choix permet à n'importe quel projet frontend de l'entreprise de l'installer et de
             l'utiliser comme une dépendance standard, tout en gardant le code source privé.
             <br />
             <br />
-            Cette librairie introduit plusieurs améliorations structurelles. D'abord, elle
-            uniformise tous les appels API en un point d'entrée unique, évitant la duplication de
-            code et garantissant une cohérence dans la façon dont les requêtes sont construites et
-            envoyées. Ensuite, elle apporte un typage complet des réponses grâce à TypeScript,
+            Cette librairie introduit plusieurs <strong>améliorations structurelles</strong>.
+            D'abord, elle uniformise tous les appels API en un{' '}
+            <strong>point d'entrée unique</strong>, évitant la duplication de code et garantissant
+            une cohérence dans la façon dont les requêtes sont construites et envoyées. Ensuite,
+            elle apporte un <strong>typage complet</strong> des réponses grâce à TypeScript,
             réduisant les erreurs à la compilation et améliorant l'expérience de développement.
             <br />
             <br />
@@ -209,10 +223,10 @@ export default function AdminHbond() {
             <code>ApiError</code> normalisés. Elle applique des handlers spécifiques selon le
             contexte, puis des traductions en fonction du code d'erreur ou du statut HTTP retourné,
             afin de fournir à l'utilisateur un message clair et pertinent. Toutes les erreurs de
-            l'application transitent par ce système, ce qui garantit une expérience utilisateur
-            cohérente et facilite grandement le débogage. En parallèle, j'ai travaillé avec le
-            développeur backend pour uniformiser le format des erreurs retournées par l'API,
-            condition nécessaire pour que l'<code>ErrorFactory</code>
+            l'application transitent par ce système, ce qui garantit une expérience utilisateur{' '}
+            <strong>cohérente</strong> et facilite grandement le débogage. En parallèle, j'ai
+            travaillé avec le développeur backend pour uniformiser le format des erreurs retournées
+            par l'API, condition nécessaire pour que l'<code>ErrorFactory</code>
             puisse les traiter de manière fiable.
           </p>
           <h3>Récolte des besoins</h3>
@@ -299,8 +313,9 @@ export default function AdminHbond() {
             l'application.
             <br />
             <br />
-            Les tests ont été écrits avec Jest et couvrent deux niveaux. Les tests unitaires portent
-            sur des fonctions isolées à fort enjeu logique, notamment l'
+            Les tests ont été écrits avec <strong>Jest</strong> et couvrent{' '}
+            <strong>deux niveaux</strong>. Les tests unitaires portent sur des fonctions isolées à
+            fort enjeu logique, notamment l'
             <code>ErrorFactory</code> et son système de transformation des erreurs API, ainsi que le
             système de construction de requêtes (<code>Query builder</code>) maison, qui détermine
             les règles d'éligibilité des utilisateurs à une discount. Ces fonctions étant au cœur du
@@ -308,12 +323,12 @@ export default function AdminHbond() {
             sur l'expérience utilisateur ou l'intégrité des données.
             <br />
             <br />
-            Les tests d'intégration quant à eux portent sur les hooks personnalisés, testés en
-            combinaison avec des appels API mockés. L'objectif est de vérifier que la logique métier
-            encapsulée dans les hooks se comporte correctement face aux différents scénarios de
-            réponse de l'API : succès, erreur métier, erreur réseau. Ce niveau de test permet de
-            valider le bon fonctionnement des flux de données sans dépendre d'un backend réel, tout
-            en restant proche des conditions d'utilisation réelles.
+            Les <strong>tests d'intégration</strong> quant à eux portent sur les hooks
+            personnalisés, testés en combinaison avec des appels API mockés. L'objectif est de
+            vérifier que la logique métier encapsulée dans les hooks se comporte correctement face
+            aux différents scénarios de réponse de l'API : succès, erreur métier, erreur réseau. Ce
+            niveau de test permet de valider le bon fonctionnement des flux de données sans dépendre
+            d'un backend réel, tout en restant proche des conditions d'utilisation réelles.
           </p>
           <h3>Mise en production</h3>
           <p>
@@ -321,18 +336,20 @@ export default function AdminHbond() {
             outils utilisés que dans la maturité du processus de déploiement.
             <br />
             <br />
-            Le déploiement est entièrement automatisé via une pipeline CI/CD : chaque merge sur la
-            branche principale déclenche automatiquement un build et un déploiement en production,
-            sans intervention manuelle. Cette automatisation garantit une mise en production rapide
-            et reproductible, limitant les risques d'erreurs humaines liées à un déploiement manuel.
+            Le déploiement est entièrement automatisé via une <strong>pipeline CI/CD</strong> :
+            chaque merge sur la branche principale déclenche automatiquement un build et un
+            déploiement en production, sans intervention manuelle. Cette automatisation garantit une{' '}
+            <strong>mise en production rapide et reproductible</strong>, limitant les risques
+            d'erreurs humaines liées à un déploiement manuel.
             <br />
             <br />
             L'application a dans un premier temps été déployée sur Vercel. Cependant, le modèle
             tarifaire de cet outil s'est rapidement révélé contraignant : chaque nouvel utilisateur
             devait être explicitement ajouté à la liste des accès autorisés, sous peine de voir le
             déploiement bloqué, pour un coût de 20€ par utilisateur. Face à cette limitation, nous
-            avons migré vers Cloudflare Pages, dont le coût global est inférieur à 20€ toutes
-            options comprises, ce qui représente une économie significative pour une start-up.
+            avons migré vers <strong>Cloudflare Pages</strong>, dont le coût global est inférieur à
+            20€ toutes options comprises, ce qui représente une{' '}
+            <strong>économie significative</strong> pour une start-up.
             <br />
             <br />
             En l'absence d'environnement de staging ( qui constitue d'ailleurs l'une des prochaines
@@ -389,25 +406,27 @@ export default function AdminHbond() {
         <section className="competence-sub-item">
           <h2>Ce que je retiens</h2>
           <p>
-            Ce projet représente pour moi une expérience complète de développement frontend,
-            couvrant l'ensemble du cycle de vie d'une application : de la récolte des besoins
-            jusqu'à la mise en production, en passant par la conception, le développement et les
-            tests. C'est cette globalité qui en fait une réalisation particulièrement formatrice.
+            Ce projet représente pour moi une{' '}
+            <strong>expérience complète de développement frontend</strong>, couvrant l'ensemble du
+            cycle de vie d'une application : de la récolte des besoins jusqu'à la mise en
+            production, en passant par la conception, le développement et les tests. C'est cette
+            globalité qui en fait une réalisation particulièrement formatrice.
             <br />
             <br />
             Sur le plan technique, le projet m'a permis de monter en compétences sur des sujets
-            variés et concrets : la sécurisation d'une application web, la conception d'une
-            librairie HTTP réutilisable, l'écriture de tests ou encore la gestion d'une pipeline
-            CI/CD. Travailler sans maquettes m'a également poussé à développer un sens du design et
-            de l'UX que je n'aurais pas autant sollicité dans un contexte plus encadré.
+            variés et concrets : la <strong>sécurisation d'une application web</strong>, la
+            conception d'une <strong>librairie HTTP réutilisable</strong>, l'écriture de tests ou
+            encore la gestion d'une <strong>pipeline CI/CD</strong>. Travailler sans maquettes m'a
+            également poussé à développer un <strong>sens du design et de l'UX</strong> que je
+            n'aurais pas autant sollicité dans un contexte plus encadré.
             <br />
             <br />
             Sur le plan humain, ce projet m'a appris à naviguer dans une équipe distribuée, où la
-            communication ne va pas toujours de soi. J'ai aussi développé une capacité à interpréter
-            des besoins exprimés de manière floue ou incomplète, à poser les bonnes questions et à
-            transformer une phrase courte en spécification technique exploitable. Ce sont des
-            compétences que je considère aujourd'hui aussi importantes que les compétences purement
-            techniques.
+            communication ne va pas toujours de soi. J'ai aussi développé une capacité à
+            <strong>interpréter des besoins flous</strong>, à{' '}
+            <strong>poser les bonnes questions</strong> et à transformer une phrase courte en{' '}
+            <strong>spécification technique exploitable</strong>. Ce sont des compétences que je
+            considère aujourd'hui aussi importantes que les compétences purement techniques.
             <br />
             <br />
             Si je devais recommencer, je mettrais en place un environnement de staging dès le début
