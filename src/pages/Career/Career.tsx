@@ -20,6 +20,7 @@ type CareerEntry = {
   logoAlt?: string
   logoText?: string
   logoSrc?: string
+  redirectUrl: string
 }
 
 const careerEntries: CareerEntry[] = [
@@ -37,6 +38,8 @@ const careerEntries: CareerEntry[] = [
     logoAlt: 'Logo Iscod',
     logoText: 'ISCOD',
     logoSrc: ISCOD,
+    redirectUrl:
+      'https://www.iscod.fr/?gad_campaignid=9492102615&gbraid=0AAAAAD1Gu2KG8sEEQ7NIwjIzlaIuFwC2V',
   },
   {
     id: 'hbond-master-alternance',
@@ -52,6 +55,7 @@ J’ai réalisé deux ans d’alternance dans cette entreprise dans le cadre de 
     logoAlt: 'Logo hbond',
     logoText: 'hbond',
     logoSrc: hbond,
+    redirectUrl: 'https://www.hbond.fr/',
   },
   {
     id: 'wild-code-school-rncp6',
@@ -65,6 +69,7 @@ J’ai réalisé deux ans d’alternance dans cette entreprise dans le cadre de 
       La Wild Code School est une école de coding qui forme des développeurs web et des professionnels du digital à travers des formations disponibles en présentiel ou à distance, dans plusieurs villes en Europe. Elle propose des programmes immersifs, de 5 mois ou 1 an, axés sur les technologies les plus demandées par le marché du travail, telles que JavaScript, React ou Python, avec une pédagogie basée sur des projets concrets et le travail collaboratif.
 
 J’ai réalisé dans cette école une formation en alternance préparant au titre RNCP de niveau 6 « Concepteur développeur d’applications web et mobile ». Le programme développe les capacités de conception, développement et déploiement d’applications web et logicielles complexes, en maîtrisant aussi bien le développement front-end que back-end. Ce programme couvre des compétences telles que la modélisation de bases de données, la programmation orientée objet, la gestion de projets agiles ainsi que la sécurisation des applications.`,
+    redirectUrl: 'https://www.wildcodeschool.com/',
   },
   {
     id: 'hbond-rncp6-alternance',
@@ -80,6 +85,7 @@ J’ai réalisé dans cette école une formation en alternance préparant au tit
 J’ai réalisé un an d’alternance dans cette entreprise dans le cadre de mon master à l’ISCOD. J’y ai occupé le poste de développeur full stack, bien que mes missions aient été principalement frontend. J’ai néanmoins travaillé sur le backend et développé l’application mobile avec une technologie cross-platform.`,
     logoText: 'hbond',
     logoSrc: hbond,
+    redirectUrl: 'https://www.hbond.fr/',
   },
   {
     id: 'esf-moniteur-ski',
@@ -92,6 +98,7 @@ J’ai réalisé un an d’alternance dans cette entreprise dans le cadre de mon
     L’École du Ski Français (ESF) est le premier réseau mondial de cours de ski, présent dans la quasi-totalité des stations de ski françaises, avec plus de 17 000 moniteurs diplômés d’État. Elle propose des cours collectifs et particuliers pour tous les niveaux et tous les âges, aussi bien en ski alpin, ski de fond, snowboard qu’en d’autres disciplines de glisse.
     
 J’ai, au sein de l’ESF, encadré des cours collectifs et particuliers, tous niveaux, enfants et adultes. J’ai adapté la progression pédagogique et le discours au profil de chaque élève.`,
+    redirectUrl: 'https://www.esfdurevard.fr/',
   },
   {
     id: 'uga-licence',
@@ -106,6 +113,7 @@ J’ai, au sein de l’ESF, encadré des cours collectifs et particuliers, tous 
       Classée parmi les 150 meilleures universités mondiales selon le QS World University Rankings 2024, l’UGA se distingue particulièrement dans les domaines des sciences et de l’ingénierie. Elle est également la première université française en sciences de l’environnement selon le Shanghai Ranking 2023.
       
       Au sein de cette université, j’ai obtenu une licence en sciences fondamentales, couvrant les disciplines de la physique, de la chimie, des mathématiques et de la mécanique. Les enseignements étaient orientés vers la modélisation, le raisonnement analytique, la démarche expérimentale et l’initiation à la programmation.`,
+    redirectUrl: 'https://www.univ-grenoble-alpes.fr/',
   },
   {
     id: 'cnsnm-brevet',
@@ -118,6 +126,7 @@ J’ai, au sein de l’ESF, encadré des cours collectifs et particuliers, tous 
     description: `Le CNSNMM (Centre National de Ski Nordique et de Moyenne Montagne) est un centre d'entraînement et de formation situé à Prémanon dans le Jura, dédié au développement des sports nordiques tels que le ski de fond, le biathlon, le saut à ski et le combiné nordique. Il accueille des athlètes de haut niveau, des équipes de France, ainsi que des formations de moniteurs et d'entraîneurs, jouant un rôle clé dans la performance sportive française en montagne.
       
 Dans ce cadre, le BE1 de ski nordique (Brevet d'État 1er degré) est une certification professionnelle qui permet d'enseigner le ski de fond et les disciplines nordiques en autonomie. Il forme des éducateurs sportifs capables d'encadrer des publics variés, du débutant au pratiquant confirmé, dans un cadre sécurisé et pédagogique.`,
+    redirectUrl: 'https://www.ensm.sports.gouv.fr/cnsnmm/',
   },
 ]
 
@@ -178,6 +187,7 @@ export default function Career() {
                       <div
                         className="career-logo"
                         aria-label={entry.logoAlt ?? `${entry.organisation} logo`}
+                        onClick={() => window.open(entry.redirectUrl, '_blank')}
                       >
                         {entry.logoSrc ? (
                           <img
