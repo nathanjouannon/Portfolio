@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import '../style/competenceItem.css'
+import CompetenceGauge from './CompetenceGauge'
 
 export default function Integration() {
   return (
     <>
       <article className="competence-detail" aria-labelledby="organisation-title">
         <h1 id="organisation-title">Intégration, industrialisation et déploiement de logicielle</h1>
+        <CompetenceGauge note={10} />
         <section className="competence-sub-item">
           <h2>Ma définition</h2>
           <p>

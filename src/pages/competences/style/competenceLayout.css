@@ -184,7 +184,7 @@
   height: clamp(4.7rem, 8.4vw, 5.4rem);
   stroke: currentColor;
   fill: none;
-  stroke-width: 2;
+  stroke-width: 1.15;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
