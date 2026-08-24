@@ -27,6 +27,18 @@ export default function CompetencesLayout() {
                         </svg>
                       </span>
                       <span className="competence-label">{item.label}</span>
+                      <div
+                        className="competence-gauge"
+                        role="img"
+                        aria-label={`Niveau de maîtrise : ${item.note} sur 10`}
+                      >
+                        <div className="competence-gauge-track">
+                          <div
+                            className="competence-gauge-fill"
+                            style={{ width: `${item.note * 10}%` }}
+                          />
+                        </div>
+                      </div>
                     </Link>
                   </li>
                 ))}

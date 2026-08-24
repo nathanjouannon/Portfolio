@@ -393,3 +393,37 @@
     padding: 0.45rem 0.8rem;
   }
 }
+
+/* test */
+.competence-gauge {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.competence-gauge-track {
+  flex: 1;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bleu-400) 55%, transparent);
+  overflow: hidden;
+}
+
+.competence-gauge-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--bleu-700, var(--bleu-800));
+  transition: width 320ms ease;
+}
+
+.competence-icon {
+  width: clamp(4.7rem, 8.4vw, 5.4rem);
+  height: clamp(4.7rem, 8.4vw, 5.4rem);
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
