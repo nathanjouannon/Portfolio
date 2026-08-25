@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 
 export default function OFit() {
+  const Fonctionnalites = '/project/Ofit/Fonctionnalité.png'
+
   return (
     <>
       <article className="competence-detail" aria-labelledby="organisation-title">
@@ -143,6 +145,16 @@ export default function OFit() {
             (V1, V2, etc.), permettant de distinguer ce qui était indispensable au lancement de ce
             qui pouvait être reporté sans compromettre la valeur du produit.
           </p>
+          <br />
+          <img
+            src={Fonctionnalites}
+            alt="App screens"
+            style={{ width: '90%', height: 'auto', alignSelf: 'center' }}
+          />
+          <span className="img-legend">
+            Figure 1 : Liste non exhaustive des fonctionnalités de l'application, classées par
+            priorité et version cible
+          </span>
           <h3>Suivi du projet</h3>
           <p>
             Pour assurer un <strong>suivi structuré</strong> du projet, un{' '}
