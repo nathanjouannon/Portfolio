@@ -1,10 +1,20 @@
 import { Link } from 'react-router-dom'
 
 export default function ApplicationHbond() {
+  const AccountCreation = '/project/AppHbond/Account.png'
+  const AppScreens = '/project/AppHbond/Screens.png'
+  const logoHbondBlack = '/project/AppHbond/Hbond-logo-black copie.svg'
+
   return (
     <>
       <article className="competence-detail" aria-labelledby="organisation-title">
         <h1 id="organisation-title">Application hbond</h1>
+        <img
+          src={logoHbondBlack}
+          alt="Logo hbond"
+          className="project-logo"
+          style={{ width: '20%', height: 'auto' }}
+        />
         <section className="competence-sub-item">
           <h2>Introduction</h2>
           <p>
@@ -219,6 +229,17 @@ export default function ApplicationHbond() {
             automatique via l'API du ministère ont été revus et corrigés, ce point ayant été
             identifié comme une source potentielle de problèmes.
           </p>
+          <br />
+          <img
+            src={AccountCreation}
+            alt="Account Creation"
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <span className="img-legend">
+            Figure 1 : Animation de la création de compte qui rappelle les règles d'utilisation de
+            l'application et les conditions d'accès.
+          </span>
+          <br />
           <h3>Refonte complète du design et mise en place d'un design system</h3>
           <p>
             L'application a fait l'objet d'une <strong>refonte complète de son design</strong> afin
@@ -240,6 +261,17 @@ export default function ApplicationHbond() {
             l'application. L'ensemble a été regroupé et <strong>standardisé</strong> via des
             variables communes, spécifiant pour chaque usage la taille et le style appropriés.
           </p>
+          <br />
+          <img
+            src={AppScreens}
+            alt="App screens"
+            style={{ width: '90%', height: 'auto', alignSelf: 'center' }}
+          />
+          <span className="img-legend">
+            Figure 2 : Différents écrans de l'application après la refonte. Avec le nouveau design
+            système.
+          </span>
+          <br />
           <h3>Passage à l'Europe</h3>
           <p>
             L'application disposait déjà de la librairie i18n installée avec l'ensemble des
