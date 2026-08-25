@@ -322,3 +322,12 @@
     padding: 1.1rem;
   }
 }
+
+.img-legend {
+  display: block;
+  margin: 0.5rem auto 1rem;
+  font-size: 0.85rem;
+  color: color-mix(in srgb, var(--black-800) 90%, transparent);
+  text-align: center;
+  font-style: italic;
+}

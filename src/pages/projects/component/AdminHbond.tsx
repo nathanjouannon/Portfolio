@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom'
 
 export default function AdminHbond() {
+  const blazeHbodn = '/project/AdminHbond/Hbond-blaze-black copie.svg'
+  const validation_1 = '/project/AdminHbond/Validation_1.png'
+  const validation_2 = '/project/AdminHbond/validation_2.png'
+  const discount_1 = '/project/AdminHbond/Discount_1.png'
+  const discount_2 = '/project/AdminHbond/Discount_2.png'
+  const communication = '/project/AdminHbond/Communication.png'
+
   return (
     <>
       <article className="competence-detail" aria-labelledby="organisation-title">
         <h1 id="organisation-title">Projet admin hbond®</h1>
+        <img src={blazeHbodn} alt="Logo hbond" style={{ width: '10%', height: 'auto' }} />
         <section className="competence-sub-item">
           <h2>Introduction</h2>
           <p>
@@ -291,6 +299,17 @@ export default function AdminHbond() {
             validés.
             <br />
             <br />
+            <img src={validation_1} alt="Validation 1" style={{ width: '100%', height: 'auto' }} />
+            <span className="img-legend">
+              Figure 1 : différents onglets de la page de validation trié par status
+            </span>
+            <br />
+            <img src={validation_2} alt="Validation 2" style={{ width: '100%', height: 'auto' }} />
+            <span className="img-legend">
+              Figure 2 : Détail d'une demande de validation (l'image ne montre pas tou la page, il y
+              a aussi une image du diplomes demandés)
+            </span>
+            <br />
             La page de gestion des discounts permet de créer et gérer les remises accordées aux
             professionnels en fonction de leurs tags (pays, organisation, activité). Les discounts
             peuvent être temporaires ou permanentes, et chacune dispose d'une page de détail
@@ -300,11 +319,35 @@ export default function AdminHbond() {
             (connexion API e-commerce, import CSV...) et de les régénérer si nécessaire.
             <br />
             <br />
+            <img src={discount_1} alt="Discount 1" style={{ width: '100%', height: 'auto' }} />
+            <span className="img-legend">
+              Figure 3 : Gestion des différents discounts, avec filtre de recherche par marque et
+              par type de discount.
+            </span>
+            <br />
+            <img src={discount_2} alt="Discount 2" style={{ width: '100%', height: 'auto' }} />
+            <span className="img-legend">
+              Figure 4 : Onglet de suivi des coupons associés à un discount, avec possibilité de
+              régénérer les coupons.
+            </span>
+            <br />
             La page de gestion des communications permet de créer et programmer des campagnes de
             communication multicanal. Une fois une campagne créée, il est possible d'y associer
             jusqu'à trois contenus de types différents : email, notification in-app ou notification
             push. L'envoi peut ensuite être programmé et ciblé précisément en fonction des tags des
             utilisateurs destinataires (pays, organisation, activité) ou de leurs identifiants.
+            <br />
+            <br />
+            <img
+              src={communication}
+              alt="Communication"
+              style={{ width: '100%', height: 'auto' }}
+            />
+            <span className="img-legend">
+              Figure 5 : Gestion des campagnes de communication, avec possibilité de programmer et
+              cibler les envois.
+            </span>
+            <br />
           </p>
           <h3>Ajout des tests</h3>
           <p>
